@@ -1,0 +1,55 @@
+/* PREVOUIS.STYL ======================================= */
+
+
+.previous
+    flexbox()
+    flex-flow: column nowrap
+    max-width: 750px
+    margin: 50px auto 0 auto
+
+    .previous__nav
+        flexbox()
+
+        .pn-item
+            width: 50px
+
+            &.active span
+                color: colorBlue
+                font-weight: 700
+                border-bottom: 2px solid colorBlue
+
+            span
+                font-size: 14px
+                font-weight: 400
+                cursor: pointer
+
+                &:hover,
+                &.active
+                    color: colorBlue
+                    font-weight: 700
+                    border-bottom: 2px solid colorBlue
+
+    .slideshow
+        margin-top: 20px
+        width: 100%
+        height: 500px
+        background: colorGray02
+        background-size: cover !important
+        overflow: hidden
+        display: none
+
+        a
+            width: 100%
+            height: 100%
+            display: block
+
+    #slideshowAll
+        background: colorGray02 url(../img/slideshow/all.jpg) no-repeat center
+    #slideshow2014
+        background: colorGray02 url(../img/slideshow/2014.jpg) no-repeat center
+    #slideshow2015
+        background: colorGray02 url(../img/slideshow/2015.jpg) no-repeat center
+    #slideshow2016
+        background: colorGray02 url(../img/slideshow/2016.jpg) no-repeat center
+    #slideshow2017
+        background: colorGray02 url(../img/slideshow/2017.jpg) no-repeat center

@@ -41,6 +41,14 @@
         justify-content: space-between
         width: 100%
 
+        a
+            img
+                transition(.2s)
+                filter: grayscale(100%)
+
+                &:hover
+                    filter: grayscale(0)
+
     .contact
         font-family: font2
         font-size: 12px

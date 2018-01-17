@@ -29,10 +29,16 @@
                 flex-flow: column nowrap
                 width: 40%
 
+                &:hover img
+                    filter: grayscale(0)
+
                 img
                     width: 150px
                     margin-bottom: 20px
-            
+                    filter: grayscale(100%)
+                    transition(.2s)
+
+
             .howto__choice-spacer
                 width: 20%
                 flexbox()
@@ -48,3 +54,9 @@
             line-height: 21px
             margin-bottom: 10px
 
+        img
+            filter: grayscale(100%)
+            transition(.2s)
+
+            &:hover
+                filter: grayscale(0)

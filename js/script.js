@@ -91,52 +91,17 @@ $(function() {
     });
 
 
-
-
-    /* Trade link */
-    $("#trade-link").click(function() {
-        $("#wallet-overlay").removeClass("show");
-        $("#wallet-overlay").removeClass("fadeIn");
-        $(".wallet").removeClass("slideIn");
-    });
-
-    /* Wallet link */
-    $("#wallets-link").click(function() {
-        $("#wallet-overlay").addClass("show");
-        $("#wallet-overlay").addClass("fadeIn");
-        $(".wallet").addClass("slideIn");
-    });
-
-    /* Settings link */
-    $("#settings-link").click(function() {
-        $("#wallet-overlay").removeClass("show");
-        $("#wallet-overlay").removeClass("fadeIn");
-        $(".wallet").removeClass("slideIn");
-    });
-
-    /* Logout link */
-    $("#logout-link").click(function() {
-        $("#wallet-overlay").removeClass("show");
-        $("#wallet-overlay").removeClass("fadeIn");
-        $(".wallet").removeClass("slideIn");
-    });
-
-
-
-
-    /* WALLET LINKS ********/
-    /* Wallets Cards */
-    $(".wallet-select__item").click(function() {
-        $(".wallet-select__item").removeClass("active");
-        $(this).addClass("active");
-
-        $(".wallet-result").removeClass("slideIn");
-        if (this.id === "ws-iop") {
-            $(".wr-iop").addClass("slideIn");
-        } else if (this.id === "ws-hyd") {
-            $(".wr-hyd").addClass("slideIn");
+    /* AGENDA MOBILE NAV */
+    $(".agenda-nav__btn").click(function() {
+        $(".agenda").removeClass("show");
+        var x = $(this).attr('target');
+        if (x === "an-left") {
+            $("#day1").addClass("show");
+        } else {
+            $("#day2").addClass("show");
         }
     });
+
 
 
 });

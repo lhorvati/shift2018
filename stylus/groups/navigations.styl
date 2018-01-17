@@ -104,3 +104,32 @@
 
         &:hover
             border-bottom: 2px solid colorBlue
+
+
+
+/* AGENDA NAV ========================== */
+.agenda-nav-wrap
+    position: absolute
+    left: 0
+    width: 100%
+    display: none
+
+    .agenda-nav
+        flexbox()
+        width: 100%
+        justify-content: space-between
+        align-items: center
+
+        .agenda-nav__btn
+            width: 33px
+            height: 33px
+            background: colorBlue
+            flexbox()
+            flex-center()
+            color: colorWhite
+            font-size: 14px
+            font-size: 600
+            transition(.2s)
+
+            &:active
+                background: colorBlueLight

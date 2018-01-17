@@ -269,7 +269,14 @@
 
         .agenda-wrap
 
-          .agenda
+          .agenda-nav-wrap
+            .agenda-nav
+              .agenda-nav__btn(target="an-left")
+                <
+              .agenda-nav__btn(target="an-right")
+                >
+
+          #day1.agenda.show
             .agenda__title Day 1 - 31/05/2018 - Thursday
             .small-nav2
               #day1-mainLink.small-nav2__item.active
@@ -405,7 +412,7 @@
 
 
 
-          .agenda
+          #day2.agenda
             .agenda__title Day 2 - 01/06/2018 - Friday
             .small-nav3
               #day2-mainLink.small-nav3__item.active

@@ -1,11 +1,21 @@
 $(function() {
 
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 20) {
+            $(".navBar").addClass("scroll");
+        } else {
+            $(".navBar").removeClass("scroll");
+        }
+    });
 
     /* TOP NAVIGATION */
     $(".nav__link").click(function() {
         $(".nav__link").removeClass("active");
         $(this).addClass("active");
     });
+
 
     /* MOBILE NAVIGATION */
     $(".navBar__btn").click(function() {

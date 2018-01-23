@@ -95,6 +95,10 @@ $(function() {
             $("#slideshow2015").addClass("show");
         } else if (this.id === "pn-item2014") {
             $("#slideshow2014").addClass("show");
+        } else if (this.id === "pn-item2013") {
+            $("#slideshow2013").addClass("show");
+        } else if (this.id === "pn-item2012") {
+            $("#slideshow2012").addClass("show");
         } else if (this.id === "pn-item-all") {
             $("#slideshowAll").addClass("show");
         }

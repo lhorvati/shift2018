@@ -14,7 +14,7 @@
 
     %meta(charset="UTF-8")/
     %meta(name="keywords" content="Shift, 2018, developer, developer conference, conference, dev")/
-    %meta(name="description" content="The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1500 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
+    %meta(name="description" content="The biggest Developer Conference in South East Europe. This event, Shift 2018 is the seventh and will bring together more than 1500 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
     %meta(name="author" content="horvaticluka@gmail.com")/
     %meta(id="meta" name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover")/
 
@@ -68,22 +68,25 @@
           .heroBox__buttons
             %a.btn.blue.empty(href="#tickets") Get Tickets
             .heroBox__buttons-spacer or
-            .btn.link.white Watch live stream
+            %a.btn.link.white(href="https://www.youtube.com/watch?time_continue=1&v=YOMcSbT82Ks" target="_blenk") Watch our Video Review
+
+        .heroDate
+          31 May & 1 June 2018
 
 
     / ABOUT SECTION **************************************
     #about.section
       .container
         %h1.small
-          %span SHIFT
+          %span Shift 
           Developer Conference 2018
-        .title-desc The biggest Developer Conference in Southeast Europe
+        .title-desc The biggest Developer Conference in South East Europe
 
         .about__event
-          %img(src="img/about.jpg" alt="Shift Conference")/
+          %img(srcset="img/about@1x.jpg 1x, img/about@2x.jpg 2x" src="img/about@1x.jpg" alt="Shift Conference")/
           %i.icon.calendar
           %h2 Event
-          %p The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1500 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
+          %p The biggest Developer Conference in South East Europe. This event, Shift 2018 is the seventh and will bring together more than 1500 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
 
         .about__wrap
           .about__talks
@@ -93,7 +96,7 @@
 
           .about__workshops
             %i.icon.team
-            %h2 Talks
+            %h2 Workshops
             %p Industry experts and thought leaders will bring you up to speed with some of the most exciting technologies: React, React Native, Webpack, and Symphony. Two-hour long hands-on workshops will be running in parallel with the rest of the event so don't forget your laptops. Workshops will take place in Area 55, seating capacity is limited so come early.
 
     / NUMBERS SECTION **************************************
@@ -123,126 +126,14 @@
           #speakers-mainLink.small-nav1__item.active
             main track speakers
           #speakers-areaLink.small-nav1__item
-            area 55 speakers
+            workshop speakers
 
         #speakers-main.speakers-content.show
           .speakers-wrap
 
             .speaker
               .speaker__image
-                %img(src="img/speakers/petar-hopwod.jpg" alt="Petar Hopwood")/
-              .speaker__name Peter Hopwood
-              .speaker__title
-                Conference Host at 
-                %br/
-                Hopwood Communications & Copywriting
-              .speaker__more-btn.btn.blue.empty.small(target="1") Read more
-              #sm1.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/peterhopwoodpublicspeaking/" target="_blank")
-                  %a.social.twitter(href="https://twitter.com/hopwoodmedia" target="_blank")
-                  //%a.social.github(href="#" target="_blank")
-                .social__bio Global public speaking, impact and presence coach helping professionals, brands and teams to shine with impact when it matters. In demand across Europe and Middle East.
-
-            .speaker
-              .speaker__image
-                %img(src="img/speakers/kathy-simpson.jpg" alt="Kathy Simpson")/
-              .speaker__name Kathy Simpson
-              .speaker__title
-                Director of Product at
-                %br/
-                GitHub
-              .speaker__more-btn.btn.blue.empty.small(target="2") Read more
-              #sm2.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/kathleensimpson/" target="_blank")
-                  %a.social.twitter(href="https://twitter.com/simpsoka" target="_blank")
-                  %a.social.github(href="https://github.com/simpsoka" target="_blank")
-                .social__bio 
-
-            .speaker
-              .speaker__image
-                %img(src="img/speakers/luca-cipriani.jpg" alt="Luca Cipriani")/
-              .speaker__name Luca Cipriani
-              .speaker__title
-                CIO at
-                %br/
-                Arduino
-              .speaker__more-btn.btn.blue.empty.small(target="3") Read more
-              #sm3.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/lucacipriani/" target="_blank")
-                  %a.social.twitter(href="https://twitter.com/mastrolinux?lang=en" target="_blank")
-                  %a.social.github(href="https://github.com/mastrolinux" target="_blank")
-                .social__bio  I am Linux expert and DevOps advocate, now CIO for Arduino and responsible of the Arduino Create platform, my goal is to move millions users to the cloud.
-
-            .speaker
-              .speaker__image
-                %img(src="img/speakers/wium-lie.jpg" alt="Håkon Wium Lie")/
-              .speaker__name Håkon Wium Lie
-              .speaker__title
-                Creator of
-                %br/
-                CSS
-              .speaker__more-btn.btn.blue.empty.small(target="4") Read more
-              #sm4.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/howcome/" target="_blank")
-                  %a.social.twitter(href="https://twitter.com/wiumlie" target="_blank")
-                  //%a.social.github(href="#" target="_blank")
-                .social__bio Originally coming from a radio journalism background, he built his first web site around 1997 and spent the following years working on large, international web sites.
-
-            .speaker
-              .speaker__image
-                %img(src="img/speakers/seanLarkin.jpeg" alt="Sean Larkin")/
-              .speaker__name Sean Larkin
-              .speaker__title
-                Technical Program Manager at
-                %br/
-                Microsoft
-              .speaker__more-btn.btn.blue.empty.small(target="5") Read more
-              #sm5.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/seanthomaslarkin/" target="_blank")
-                  %a.social.twitter(href="https://twitter.com/TheLarkInn" target="_blank")
-                  %a.social.github(href="https://github.com/thelarkinn" target="_blank")
-                .social__bio 
-
-            .speaker
-              .speaker__image
-                %img(src="img/speakers/marcAbraham.jpg" alt="Marc Abraham")/
-              .speaker__name Marc Abraham
-              .speaker__title
-                Global ProductTank Coordinator at
-                %br/
-                Mind the Product
-              .speaker__more-btn.btn.blue.empty.small(target="6") Read more
-              #sm6.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/abrahammarc/" target="_blank")
-                  //%a.social.twitter(href="#" target="_blank")
-                  //%a.social.github(href="#" target="_blank")
-                .social__bio 
-
-            .speaker
-              .speaker__image
-                %img(src="img/speakers/mathiasMeyer.jpg" alt="Mathias Meyer")/
-              .speaker__name Mathias Meyer
-              .speaker__title
-                CEO at
-                %br/
-                TravisCI
-              .speaker__more-btn.btn.blue.empty.small(target="7") Read more
-              #sm7.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/mathias-meyer-50a753aa/" target="_blank")
-                  %a.social.twitter(href="https://twitter.com/roidrage" target="_blank")
-                  %a.social.github(href="https://github.com/roidrage" target="_blank")
-                .social__bio 
-
-            .speaker
-              .speaker__image
-                %img(src="img/speakers/tarikMakota.jpg" alt="Tarik Makota")/
+                %img(srcset="img/speakers/tarikMakota@1x.jpg 1x, img/speakers/tarikMakota@2x.jpg 2x" src="img/speakers/tarikMakota@1x.jpg" alt="Tarik Makota")/
               .speaker__name Tarik Makota
               .speaker__title
                 Partner Solutions Architect at
@@ -252,9 +143,144 @@
               #sm8.speaker__more
                 .speaker__social
                   %a.social.linkedin(href="https://www.linkedin.com/in/tarik-makota-7627574/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
                   %a.social.twitter(href="https://twitter.com/tarik_makota" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
                   %a.social.github(href="https://github.com/tmakota" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
                 .social__bio 
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/luca-cipriani@1x.jpg 1x, img/speakers/luca-cipriani@2x.jpg 2x" src="img/speakers/luca-cipriani@1x.jpg" alt="Luca Cipriani")/
+              .speaker__name Luca Cipriani
+              .speaker__title
+                CIO at
+                %br/
+                Arduino
+              .speaker__more-btn.btn.blue.empty.small(target="3") Read more
+              #sm3.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/lucacipriani/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/mastrolinux?lang=en" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/mastrolinux" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio  I am Linux expert and DevOps advocate, now CIO for Arduino and responsible of the Arduino Create platform, my goal is to move millions users to the cloud.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/wium-lie@1x.jpg 1x, img/speakers/wium-lie@2x.jpg 2x" src="img/speakers/wium-lie@1x.jpg" alt="Håkon Wium Lie")/
+              .speaker__name Håkon Wium Lie
+              .speaker__title
+                Creator of
+                %br/
+                CSS
+              .speaker__more-btn.btn.blue.empty.small(target="4") Read more
+              #sm4.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/howcome/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/wiumlie" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  -#%a.social.github(href="#" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                    .
+                .social__bio Originally coming from a radio journalism background, he built his first web site around 1997 and spent the following years working on large, international web sites.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/kathy-simpson@1x.jpg 1x, img/speakers/kathy-simpson@2x.jpg 2x" src="img/speakers/kathy-simpson@1x.jpg" alt="Kathy Simpson")/
+              .speaker__name Kathy Simpson
+              .speaker__title
+                Director of Product at
+                %br/
+                GitHub
+              .speaker__more-btn.btn.blue.empty.small(target="2") Read more
+              #sm2.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/kathleensimpson/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/simpsoka" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/simpsoka" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio 
+
+            -#.speaker
+              .speaker__image
+                %img(srcset="img/speakers/peter-hopwod@1x.jpg 1x, img/speakers/peter-hopwod@2x.jpg 2x" src="img/speakers/peter-hopwod@1x.jpg" alt="Petar Hopwood")/
+              .speaker__name Peter Hopwood
+              .speaker__title
+                Conference Host at 
+                %br/
+                Hopwood Communications & Copywriting
+              .speaker__more-btn.btn.blue.empty.small(target="1") Read more
+              #sm1.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/peterhopwoodpublicspeaking/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/hopwoodmedia" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="#" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Global public speaking, impact and presence coach helping professionals, brands and teams to shine with impact when it matters. In demand across Europe and Middle East.
+                .
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/seanLarkin@1x.jpg 1x, img/speakers/seanLarkin@2x.jpg 2x" src="img/speakers/seanLarkin@1x.jpg" alt="Sean Larkin")/
+              .speaker__name Sean Larkin
+              .speaker__title
+                Technical Program Manager at
+                %br/
+                Microsoft
+              .speaker__more-btn.btn.blue.empty.small(target="5") Read more
+              #sm5.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/seanthomaslarkin/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/TheLarkInn" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/thelarkinn" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio 
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/marcAbraham@1x.jpg 1x, img/speakers/marcAbraham@2x.jpg 2x" src="img/speakers/marcAbraham@1x.jpg" alt="Marc Abraham")/
+              .speaker__name Marc Abraham
+              .speaker__title
+                Global ProductTank Coordinator at
+                %br/
+                Mind the Product
+              .speaker__more-btn.btn.blue.empty.small(target="6") Read more
+              #sm6.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/abrahammarc/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                .social__bio 
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/mathiasMeyer@1x.jpg 1x, img/speakers/mathiasMeyer@2x.jpg 2x" src="img/speakers/mathiasMeyer@1x.jpg" alt="Mathias Meyer")/
+              .speaker__name Mathias Meyer
+              .speaker__title
+                CEO at
+                %br/
+                TravisCI
+              .speaker__more-btn.btn.blue.empty.small(target="7") Read more
+              #sm7.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/mathias-meyer-50a753aa/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/roidrage" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/roidrage" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio 
+
 
 
           .more-comming
@@ -291,7 +317,7 @@
               #day1-mainLink.small-nav2__item.active
                 main track
               #day1-areaLink.small-nav2__item
-                area 55
+                workshop
 
             #day1-main.agenda-content1.show
               .agenda__list
@@ -427,7 +453,7 @@
               #day2-mainLink.small-nav3__item.active
                 main track
               #day2-areaLink.small-nav3__item
-                area 55
+                workshop
 
             #day2-main.agenda-content2.show
               .agenda__list
@@ -596,9 +622,9 @@
           .download__row
             Download our app
             .download__buttons
-              %a(href="#" target="_blank")
+              %a(href="https://itunes.apple.com/il/app/shift-developer-conference/id1237840908?mt=8" target="_blank")
                 %img(src="img/appstore.svg" alt="AppStore")/
-              %a(href="#" target="_blank")
+              %a(href="https://play.google.com/store/apps/details?id=co.synergetica.shift" target="_blank")
                 %img(src="img/playstore.svg" alt="PlayStore")/
 
     / TESTIMONIALS SECTION **************************************
@@ -672,6 +698,10 @@
           .previous__nav
             #pn-item-all.pn-item
               %span All
+            #pn-item2012.pn-item
+              %span 2012
+            #pn-item2013.pn-item
+              %span 2013
             #pn-item2014.pn-item
               %span 2014
             #pn-item2015.pn-item
@@ -717,6 +747,24 @@
                       %circle(cx="27.5" cy="27.5" fill="#005DF2" r="27.5")
                       %path(d="M35.5 28.5l-11 8v-16z" fill="#FFF" opacity=".863")
                   %p Click to view the gallery
+          #slideshow2013.slideshow
+            %a(href="https://www.flickr.com/photos/shiftsplit/albums/72157633757857833" target="_blenk")
+              .previous-overlay
+                .previous__btn
+                  %svg(height="55" viewbox="0 0 55 55" width="55" xmlns="http://www.w3.org/2000/svg")
+                    %g(fill="none" fill-rule="evenodd")
+                      %circle(cx="27.5" cy="27.5" fill="#005DF2" r="27.5")
+                      %path(d="M35.5 28.5l-11 8v-16z" fill="#FFF" opacity=".863")
+                  %p Click to view the gallery
+          #slideshow2012.slideshow
+            %a(href="https://www.flickr.com/photos/shiftsplit/albums/72157630002364465" target="_blenk")
+              .previous-overlay
+                .previous__btn
+                  %svg(height="55" viewbox="0 0 55 55" width="55" xmlns="http://www.w3.org/2000/svg")
+                    %g(fill="none" fill-rule="evenodd")
+                      %circle(cx="27.5" cy="27.5" fill="#005DF2" r="27.5")
+                      %path(d="M35.5 28.5l-11 8v-16z" fill="#FFF" opacity=".863")
+                  %p Click to view the gallery
           #slideshowAll.slideshow
             %a(href="https://www.flickr.com/photos/shiftsplit/sets/" target="_blenk")
               .previous-overlay
@@ -749,7 +797,7 @@
                   center: shiftSpot
                 });
 
-                var contentString = "<strong>Shift Split Conference 2018</strong><br>Trg Gaje Bulata 1, Split<br>";
+                var contentString = "<strong>Shift Developer Conference 2018</strong><br>Trg Gaje Bulata 1, Split<br>";
 
                 var infowindow = new google.maps.InfoWindow({
                   content: contentString
@@ -758,7 +806,7 @@
                 var marker = new google.maps.Marker({
                   position: shiftSpot,
                   map: map,
-                  title: 'Shift Conference 2018'
+                  title: 'Shift Developer Conference 2018'
                 });
                 marker.addListener('click', function() {
                   infowindow.open(map, marker);
@@ -769,8 +817,8 @@
 
           .location__details
             %h2.small
-              %span Shift
-              Split Conference 2018
+              %span Shift 
+              Developer Conference 2018
             .title-desc
               Trg Gaje Bulata 1,
               %br/
@@ -942,20 +990,20 @@
           .footer__logo
           .footer__copyright
             All Rights Reserved by 
-            %a(href="shift.codeanywhere.com") Shift
+            %a(href="shift.codeanywhere.com") Shift 
             © 2018
         .footer__col
           %h3 About
-          %p The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1500 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
+          %p The biggest Developer Conference in South East Europe. This event, Shift 2018 is the seventh and will bring together more than 1500 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
           .footer-social
             %a(href="https://twitter.com/shiftsplit")
-              %img(src="img/icons/footer-twitter.svg" alt="Shift Twitter")/
+              %img(src="img/icons/s-twitter.svg" alt="Shift Twitter")/
             %a(href="https://www.facebook.com/shiftsplit")
-              %img(src="img/icons/footer-facebook.svg" alt="Shift Facebook")/
+              %img(src="img/icons/s-facebook.svg" alt="Shift Facebook")/
             %a(href="https://www.youtube.com/user/TheShiftConference")
-              %img(src="img/icons/footer-youtube.svg" alt="Shift Youtube")/
+              %img(src="img/icons/s-youtube.svg" alt="Shift Youtube")/
             %a(href="https://www.flickr.com/photos/shiftsplit/sets/")
-              %img(src="img/icons/footer-flicker.svg" alt="Shift Flicker")/
+              %img(src="img/icons/s-flicker.svg" alt="Shift Flicker")/
             
         .footer__col
           %h3 Contact

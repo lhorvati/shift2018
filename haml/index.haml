@@ -442,7 +442,7 @@
                       %span.al-company
 
                   .agenda__list-item
-                    .agenda__time 21:00 - 03:00
+                    .agenda__time 21:30 - 03:00
                     .agenda__desc
                       %span.al-title After Party
                       %span.al-name - Fabrique pub
@@ -496,10 +496,10 @@
                       %span.al-company
 
                   .agenda__list-item
-                    .agenda__time 23:00 - 04:00
+                    .agenda__time 21:30 - 03:00
                     .agenda__desc
                       %span.al-title After Party
-                      %span.al-name
+                      %span.al-name Fabrique pub
                       %span.al-company
 
 
@@ -579,10 +579,10 @@
                           %span.al-company
 
                       .agenda__list-item
-                        .agenda__time 23:00 - 04:00
+                        .agenda__time 22:00 - 06:00
                         .agenda__desc
                           %span.al-title After Party
-                          %span.al-name
+                          %span.al-name Central club
                           %span.al-company
       
 
@@ -646,10 +646,10 @@
                       %span.al-company
 
                   .agenda__list-item
-                    .agenda__time 23:00 - 04:00
+                    .agenda__time 22:00 - 06:00
                     .agenda__desc
                       %span.al-title After Party
-                      %span.al-name
+                      %span.al-name Central club
                       %span.al-company
 
 
@@ -848,6 +848,8 @@
             :javascript
               function initMap() {
                 var shiftSpot = {lat: 43.510998, lng: 16.437317};
+                var shiftParty1 = {lat: 43.508625, lng: 16.435647};
+                var shiftParty2 = {lat: 43.510924, lng: 16.438550};
 
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
@@ -865,6 +867,19 @@
                   map: map,
                   title: 'Shift Developer Conference 2018'
                 });
+
+                var marker2 = new google.maps.Marker({
+                  position: shiftParty1,
+                  map: map,
+                  title: 'Fabrique pub'
+                });
+                var marker3 = new google.maps.Marker({
+                  position: shiftParty2,
+                  map: map,
+                  title: 'Central club'
+                });
+
+
                 marker.addListener('click', function() {
                   infowindow.open(map, marker);
                 });
@@ -990,6 +1005,9 @@
               .sponsors__item
                 %a(href="http://www.pbzco-fond.hr/")
                   %img(src="img/sponsors/sponsors-pbz.png" alt="PBZ CO")/
+              .sponsors__item
+                %a(href="https://www.heroku.com/")
+                  %img(src="img/sponsors/sponsors-heroku.svg" alt="Heroku")/
 
         .sponsors-row
           .sponsors.hide

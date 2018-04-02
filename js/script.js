@@ -119,6 +119,17 @@ $(function() {
 
 
 
+    /* CODE OF CONDUCT OPEN/CLOSE */
+    $("#codeOfConduct__link").click(function() {
+        $("#codeOfconduct").addClass("show");
+    });
+    $("#codeOfconduct__close").click(function() {
+        $("#codeOfconduct").removeClass("show");
+    });
+
+
+
+
 
 
 });

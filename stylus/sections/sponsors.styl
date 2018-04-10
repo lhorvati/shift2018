@@ -15,20 +15,21 @@
 
     .sponsors-row
         flex-flow: row wrap
-        justify-content: center
+        justify-content: flex-start
         margin: 20px 0
 
     .sponsors
         flex-flow: column nowrap
-        flex-center()
+        justify-content: center
+        align-items: flex-start
 
         .sponsors__group
             flex-center()
-            margin: 0 20px 50px 20px
+            margin: 0 30px 50px 0
 
             .sponsors__item
                 flex-center()
-                margin: 0 20px
+                margin: 0 40px 0 0
 
                 img
                     filter: grayscale(100%)
@@ -38,3 +39,29 @@
 
                 a:hover img
                     filter: grayscale(0%)
+
+
+.sponsorsSlider
+    width: 100%
+    position relative
+
+    .sponsorsSlider__btn
+        width: 40px
+        height 40px
+        background: url('../img/icons/play_button.svg') center no-repeat
+        background-size: 40px
+        position: absolute
+        top: 50%
+        margin-top: -20px
+        cursor pointer
+        opacity: .5
+        transition(.2s)
+
+        &:hover
+            opacity 1
+
+        &.btn-left
+            left -50px
+            transform: rotate(180deg)
+        &.btn-right
+            right -50px

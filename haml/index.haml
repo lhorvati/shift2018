@@ -26,6 +26,10 @@
     %link(rel="stylesheet" href="css/main.css")/
     %link(rel="stylesheet" href="css/query.css")/
 
+    / Slick slider
+    %link(href="slick/slick.css" rel="stylesheet" type="text/css")/
+    %link(href="slick/slick-theme.css" rel="stylesheet" type="text/css")/
+
     / Global site tag (gtag.js) - Google Analytics
     %script(async="" src="“https://www.googletagmanager.com/gtag/js?id=UA-113486610-1“")
       :javascript
@@ -942,159 +946,164 @@
         %h1 Sponsors
         .title-desc Companies that support us
       .sponsors-wrap
-        .sponsors-row
-          .sponsors.hide
-            %h3 General Sponsor
-            .sponsors__group(style="margin: 0 20px;")
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-five.svg" alt="Five")/
-          .sponsors
-            %h3 General Partner
-            .sponsors__group(style="margin: 0 20px;")
-              .sponsors__item
-                %a(href="https://www.dalmacija.hr/")
-                  %img(src="img/sponsors/sponsors-sdz.svg" alt="Dalmacija" style="width: 120px;")/
-
-        .sponsors-row
-          .sponsors.hide
-            %h3 Sponsors
-            .sponsors__group
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-microsoft.svg" alt="Microsoft")/
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-jetbrains.svg" alt="JetBrains")/
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-ericsson.svg" alt="Ericsson")/
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-me.svg" alt="Me")/
-          .sponsors
-            %h3 Partners
-            .sponsors__group
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-splitskabanka.svg" alt="Splitska Banka")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-reversinglabs.svg" alt="Reversing Labs")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-hamag.svg" alt="HAMAG Bicro")/
-              .sponsors__item
-                %a(href="https://www.autodesk.com/")
-                  %img(src="img/sponsors/sponsors-autodesk.svg" alt="Autodesk")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-sematext.svg" alt="Sematext")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-hrcloud.svg" alt="HR Cloud")/
-              .sponsors__item
-                %a(href="http://www.visitsplit.com/")
-                  %img(src="img/sponsors/sponsors-tzs.svg" alt="Turisticka zajednica")/
-
-        
-          .sponsors
-            %h3 Friends
-            .sponsors__group
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-neuralab.svg" alt="Neurolab")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-extensionengine.svg" alt="Extension Engine")/
-              .sponsors__item
-                %a(href="http://www.pbzco-fond.hr/")
-                  %img(src="img/sponsors/sponsors-pbz.png" alt="PBZ CO")/
-              .sponsors__item
-                %a(href="https://www.heroku.com/")
-                  %img(src="img/sponsors/sponsors-heroku.svg" alt="Heroku")/
-              .sponsors__item
-                %a(href="https://getbybus.com/en/")
-                  %img(src="img/location/byBus.svg" alt="GetByBus")/
-              .sponsors__item
-                %a(href="http://agilo.co/")
-                  %img(src="img/sponsors/sponsors-agilo.png" alt="Agilo")/
-              .sponsors__item
-                %a(href="http://www.svgroup.hr/")
-                  %img(src="img/sponsors/sponsors-svGroup.png" alt="SV Group - IBM")/
-              .sponsors__item
-                %a(href="https://www.hgk.hr/")
-                  %img(src="img/sponsors/sponsors-hgk.svg" alt="Hrvatska Gospodarska Komora" style="width: 50px;")/
-
-          .sponsors
-            %h3 Organizational Partners
-            .sponsors__group
-              .sponsors__item
-                %a(href="https://codeanywhere.com/")
-                  %img(src="img/sponsors/sponsors-codeanywhere.png" alt="Codeanywhere")/
-              .sponsors__item
-                %a(href="https://www.locastic.com/")
-                  %img(src="img/sponsors/sponsors-locastic.png" alt="Locastic")/
-              .sponsors__item
-                %a(href="https://www.profi.co/")
-                  %img(src="img/sponsors/sponsors-profico.png" alt="Profico")/
+        .container
+          .sponsors-row
+            .sponsors.hide
+              %h3 General Sponsor
+              .sponsors__group(style="margin: 0 40px 20px 0;")
+                .sponsors__item
+                  %a(href="")
+                    %img(src="img/sponsors/sponsors-five.svg" alt="Five")/
+            .sponsors
+              %h3 General Partner
+              .sponsors__group(style="margin: 0 40px 20px 0;")
+                .sponsors__item
+                  %a(href="https://www.dalmacija.hr/")
+                    %img(src="img/sponsors/sponsors-sdz.svg" alt="Dalmacija" style="width: 120px;")/
 
 
+          .sponsors-row.sponsorsSlider
+            %button.sponsorsSlider__btn.btn-left
+            %button.sponsorsSlider__btn.btn-right
+            #sponsorsSlider.sponsorsSlider
+              .sponsors.hide
+                %h3 Sponsors
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-microsoft.svg" alt="Microsoft")/
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-jetbrains.svg" alt="JetBrains")/
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-ericsson.svg" alt="Ericsson")/
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-me.svg" alt="Me")/
+              .sponsors
+                %h3 Partners
+                .sponsors__group
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-splitskabanka.svg" alt="Splitska Banka")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-reversinglabs.svg" alt="Reversing Labs")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-hamag.svg" alt="HAMAG Bicro")/
+                  .sponsors__item
+                    %a(href="https://www.autodesk.com/")
+                      %img(src="img/sponsors/sponsors-autodesk.svg" alt="Autodesk")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-sematext.svg" alt="Sematext")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-hrcloud.svg" alt="HR Cloud")/
+                  .sponsors__item
+                    %a(href="http://www.visitsplit.com/")
+                      %img(src="img/sponsors/sponsors-tzs.svg" alt="Turisticka zajednica")/
 
-          .sponsors.hide
-            %h3 Expo
-            .sponsors__group
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-netgen.svg" alt="Netgen")/
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-onion.svg" alt="Onion")/
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-gamachef.svg" alt="Gamachef")/
-          .sponsors
-            %h3 Supporters
-            .sponsors__group
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-span.svg" alt="Span")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-aspira.svg" alt="Aspira")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-ecp.svg" alt="")/
-              .sponsors__item
-                %a(href="http://www.cisex.org/")
-                  %img(src="img/sponsors/sponsors-cise.svg" alt="Cisex")/
-              .sponsors__item
-                %a(href="https://www.ictzupanija.hr/")
-                  %img(src="img/sponsors/sponsors-ictZupanija.png" alt="ICT Županija")/
-              .sponsors__item
-                %a(href="http://gradst.unist.hr/")
-                  %img(src="img/sponsors/sponsors-gradevinski.svg" alt="")/
-              .sponsors__item
-                %a(href="http://www.efst.unist.hr/")
-                  %img(src="img/sponsors/sponsors-efst.svg" alt="Ekonomski fakultet" style="width:60px;")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-kingict.svg" alt="")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-c.svg" alt="")/
-              .sponsors__item.hide
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-canada.svg" alt="")/
-          .sponsors.hide
-            %h3 Food & Beverage
-            .sponsors__group
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-efst.svg" alt="")/
-              .sponsors__item
-                %a(href="")
-                  %img(src="img/sponsors/sponsors-unist.svg" alt="")/
+            
+              .sponsors
+                %h3 Friends
+                .sponsors__group
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-neuralab.svg" alt="Neurolab")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-extensionengine.svg" alt="Extension Engine")/
+                  .sponsors__item
+                    %a(href="http://www.pbzco-fond.hr/")
+                      %img(src="img/sponsors/sponsors-pbz.png" alt="PBZ CO")/
+                  .sponsors__item
+                    %a(href="https://www.heroku.com/")
+                      %img(src="img/sponsors/sponsors-heroku.svg" alt="Heroku")/
+                  .sponsors__item
+                    %a(href="https://getbybus.com/en/")
+                      %img(src="img/location/byBus.svg" alt="GetByBus")/
+                  .sponsors__item
+                    %a(href="http://agilo.co/")
+                      %img(src="img/sponsors/sponsors-agilo.png" alt="Agilo")/
+                  .sponsors__item
+                    %a(href="http://www.svgroup.hr/")
+                      %img(src="img/sponsors/sponsors-svGroup.png" alt="SV Group - IBM")/
+                  .sponsors__item
+                    %a(href="https://www.hgk.hr/")
+                      %img(src="img/sponsors/sponsors-hgk.svg" alt="Hrvatska Gospodarska Komora" style="width: 50px;")/
+
+              .sponsors
+                %h3 Organizational Partners
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://codeanywhere.com/")
+                      %img(src="img/sponsors/sponsors-codeanywhere.png" alt="Codeanywhere")/
+                  .sponsors__item
+                    %a(href="https://www.locastic.com/")
+                      %img(src="img/sponsors/sponsors-locastic.png" alt="Locastic")/
+                  .sponsors__item
+                    %a(href="https://www.profi.co/")
+                      %img(src="img/sponsors/sponsors-profico.png" alt="Profico")/
+
+
+
+              .sponsors.hide
+                %h3 Expo
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-netgen.svg" alt="Netgen")/
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-onion.svg" alt="Onion")/
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-gamachef.svg" alt="Gamachef")/
+              .sponsors
+                %h3 Supporters
+                .sponsors__group
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-span.svg" alt="Span")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-aspira.svg" alt="Aspira")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-ecp.svg" alt="")/
+                  .sponsors__item
+                    %a(href="http://www.cisex.org/")
+                      %img(src="img/sponsors/sponsors-cise.svg" alt="Cisex")/
+                  .sponsors__item
+                    %a(href="https://www.ictzupanija.hr/")
+                      %img(src="img/sponsors/sponsors-ictZupanija.png" alt="ICT Županija")/
+                  .sponsors__item
+                    %a(href="http://gradst.unist.hr/")
+                      %img(src="img/sponsors/sponsors-gradevinski.svg" alt="")/
+                  .sponsors__item
+                    %a(href="http://www.efst.unist.hr/")
+                      %img(src="img/sponsors/sponsors-efst.svg" alt="Ekonomski fakultet" style="width:60px;")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-kingict.svg" alt="")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-c.svg" alt="")/
+                  .sponsors__item.hide
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-canada.svg" alt="")/
+              .sponsors.hide
+                %h3 Food & Beverage
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-efst.svg" alt="")/
+                  .sponsors__item
+                    %a(href="")
+                      %img(src="img/sponsors/sponsors-unist.svg" alt="")/
 
 
 
@@ -1184,3 +1193,26 @@
 
 %script(crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js")
 %script(src="js/script.min.js" type="text/javascript")
+%script(src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript")
+%script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript")
+%script(src="slick/slick.min.js" type="text/javascript")
+
+:javascript
+  $(document).ready(function(){
+    $('#sponsorsSlider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      variableWidth: true,
+      prevArrow: $('.btn-left'),
+      nextArrow: $('.btn-right'),
+      speed: 1000,
+      responsive: [
+        {
+          breakpoint: 850,
+          settings: "unslick"
+        }
+      ]
+    });
+  });

@@ -1125,6 +1125,15 @@
                   .sponsors__item
                     %a(href="http://www.visitsplit.com/" target="_blank")
                       %img(src="img/sponsors/sponsors-tzs.svg" alt="Turisticka zajednica")/
+                  .sponsors__item
+                    %a(href="https://www.toptal.com/" target="_blank")
+                      %img(src="img/sponsors/sponsors-toptal.png" alt="Toptal")/
+                  .sponsors__item
+                    %a(href="https://www.shopify.com/" target="_blank")
+                      %img(src="img/sponsors/sponsors-shopify.svg" alt="Shopify")/
+                  .sponsors__item
+                    %a(href="https://aws.amazon.com/" target="_blank")
+                      %img(src="img/sponsors/sponsors-aws.svg" alt="AWS")/
 
               .sponsors
                 %h3 Friends
@@ -1154,6 +1163,12 @@
                     %a(href="https://extensionengine.com/" target="_blank")
                       %img(src="img/sponsors/sponsors-extensionengine.svg" alt="Extension Engine")/
 
+
+
+          .sponsors-row.sponsorsSlider
+            %button.sponsorsSlider__btn.btn-left2
+            %button.sponsorsSlider__btn.btn-right2
+            #sponsorsSlider2.sponsorsSlider
               .sponsors
                 %h3 Food & Beverage
                 .sponsors__group
@@ -1260,7 +1275,7 @@
         .footer__col
           %h3 Contact
           .contact
-            Udruga “SHIFT”
+            Shift Conference
             %br/
             %br/
             114. brigade 8,
@@ -1330,6 +1345,25 @@
       variableWidth: true,
       prevArrow: $('.btn-left'),
       nextArrow: $('.btn-right'),
+      speed: 2000,
+      responsive: [
+        {
+          breakpoint: 850,
+          settings: "unslick"
+        }
+      ]
+    });
+  });
+
+  $(document).ready(function(){
+    $('#sponsorsSlider2').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      variableWidth: true,
+      prevArrow: $('.btn-left2'),
+      nextArrow: $('.btn-right2'),
       speed: 2000,
       responsive: [
         {

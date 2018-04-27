@@ -127,7 +127,55 @@ $(function() {
         $("#codeOfconduct").removeClass("show");
     });
 
+    var currentAttendeePage = 1;
 
+    function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    $("#attendees__link").click(function() {
+      $("#attendees").addClass("show");
+    });
+    $("#attendees__close").click(function() {
+        $("#attendees").removeClass("show");
+    });
+
+    $.get( "https://www.eventbriteapi.com/v3/events/35075304179/attendees/?token=", function( data ) {
+      var attendees = data.attendees.map(function(attendee) {
+        return capitalizeFirstLetter(attendee.profile.first_name) + ' ' + capitalizeFirstLetter(attendee.profile.last_name);
+      });
+
+      var list = "";
+
+      for(i=0; i < attendees.length; i++){
+        list +="<div style='font-size: 18px; font-weight: 600; margin-bottom: 15px;'>" + attendees[i] + "</div>";
+      }
+
+      $("#attendee__list").append(list);
+      
+      currentAttendeePage++;
+    });
+
+    $("#attendees__more").click(function() {
+      console.log('test');
+      $.get( "https://www.eventbriteapi.com/v3/events/35075304179/attendees/?token=&page=" + currentAttendeePage, function( data ) {
+        var attendees = data.attendees.map(function(attendee) {
+          return capitalizeFirstLetter(attendee.profile.first_name) + ' ' + capitalizeFirstLetter(attendee.profile.last_name);
+        });
+
+        var list = "";
+
+        for(i=0; i < attendees.length; i++){
+          list +="<div style='font-size: 18px; font-weight: 600; margin-bottom: 15px;'>" + attendees[i] + "</div>";
+        }
+
+        $("#attendee__list").append(list);
+        
+        currentAttendeePage++;
+      }).fail(function() {
+        $("#attendees__more").remove();
+      });
+    });
 
 
 });

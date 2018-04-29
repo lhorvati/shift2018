@@ -140,42 +140,18 @@ $(function() {
         $("#attendees").removeClass("show");
     });
 
-    $.get( "https://www.eventbriteapi.com/v3/events/35075304179/attendees/?token=", function( data ) {
-      var attendees = data.attendees.map(function(attendee) {
-        return capitalizeFirstLetter(attendee.profile.first_name) + ' ' + capitalizeFirstLetter(attendee.profile.last_name);
-      });
-
-      var list = "";
-
-      for(i=0; i < attendees.length; i++){
-        list +="<div style='font-size: 18px; font-weight: 600; margin-bottom: 15px;'>" + attendees[i] + "</div>";
-      }
-
+    $.get("http://localhost:3000/attendees", function(list) {
       $("#attendee__list").append(list);
       
       currentAttendeePage++;
     });
 
     $("#attendees__more").click(function() {
-      console.log('test');
-      $.get( "https://www.eventbriteapi.com/v3/events/35075304179/attendees/?token=&page=" + currentAttendeePage, function( data ) {
-        var attendees = data.attendees.map(function(attendee) {
-          return capitalizeFirstLetter(attendee.profile.first_name) + ' ' + capitalizeFirstLetter(attendee.profile.last_name);
-        });
-
-        var list = "";
-
-        for(i=0; i < attendees.length; i++){
-          list +="<div style='font-size: 18px; font-weight: 600; margin-bottom: 15px;'>" + attendees[i] + "</div>";
-        }
-
+      $.get("http://localhost:3000/attendees?page=" + currentAttendeePage, function(list) {
         $("#attendee__list").append(list);
-        
         currentAttendeePage++;
       }).fail(function() {
         $("#attendees__more").remove();
       });
     });
-
-
 });

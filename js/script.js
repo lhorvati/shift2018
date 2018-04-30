@@ -140,14 +140,14 @@ $(function() {
         $("#attendees").removeClass("show");
     });
 
-    $.get("http://localhost:3000/attendees", function(list) {
+    $.get("https://165.227.165.88.nip.io/attendees", function(list) {
       $("#attendee__list").append(list);
       
       currentAttendeePage++;
     });
 
     $("#attendees__more").click(function() {
-      $.get("http://localhost:3000/attendees?page=" + currentAttendeePage, function(list) {
+      $.get("https://165.227.165.88.nip.io/attendees?page=" + currentAttendeePage, function(list) {
         $("#attendee__list").append(list);
         currentAttendeePage++;
       }).fail(function() {

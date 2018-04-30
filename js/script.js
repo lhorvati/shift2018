@@ -127,7 +127,31 @@ $(function() {
         $("#codeOfconduct").removeClass("show");
     });
 
+    var currentAttendeePage = 1;
 
+    function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
 
+    $("#attendees__link").click(function() {
+      $("#attendees").addClass("show");
+    });
+    $("#attendees__close").click(function() {
+        $("#attendees").removeClass("show");
+    });
 
+    $.get("https://165.227.165.88.nip.io/attendees", function(list) {
+      $("#attendee__list").append(list);
+      
+      currentAttendeePage++;
+    });
+
+    $("#attendees__more").click(function() {
+      $.get("https://165.227.165.88.nip.io/attendees?page=" + currentAttendeePage, function(list) {
+        $("#attendee__list").append(list);
+        currentAttendeePage++;
+      }).fail(function() {
+        $("#attendees__more").remove();
+      });
+    });
 });

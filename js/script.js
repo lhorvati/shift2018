@@ -140,15 +140,16 @@ $(function() {
         $("#attendees").removeClass("show");
     });
 
-    $.get("https://165.227.165.88.nip.io/attendees", function(list) {
-      $("#attendee__list").append(list);
+    $.get("http://localhost:3000/attendees", function(list) {
+      $("#attendee__list").append(list).append('<a class="btn blue fill" id="attendees__more" style="width: 200px;">See more</a>');
       
       currentAttendeePage++;
     });
 
-    $("#attendees__more").click(function() {
-      $.get("https://165.227.165.88.nip.io/attendees?page=" + currentAttendeePage, function(list) {
-        $("#attendee__list").append(list);
+    $('#attendees').on('click', '#attendees__more', function() {
+      console.log('test');
+      $.get("http://localhost:3000/attendees?page=" + currentAttendeePage, function(list) {
+        $("#attendee__list").append(list).append('<a class="btn blue fill" id="attendees__more" style="width: 200px;">See more</a>');
         currentAttendeePage++;
       }).fail(function() {
         $("#attendees__more").remove();

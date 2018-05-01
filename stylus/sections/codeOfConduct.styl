@@ -1,5 +1,8 @@
 /* CODE OF CONDUCT.STYL ======================================= */
 
+#attendees
+    overflow-y: hidden !important
+
 #codeOfconduct,
 #attendees
     position fixed
@@ -41,3 +44,10 @@
     line-height: 40px
     color: colorBlue
     cursor pointer
+
+#attendee__list
+    overflow-y: scroll
+    max-height: calc(100% - 120px)
+
+#attendees__more
+    margin-bottom: 30px

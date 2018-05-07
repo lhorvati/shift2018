@@ -26,9 +26,6 @@
     %link(rel="stylesheet" href="css/main.css")/
     %link(rel="stylesheet" href="css/query.css")/
 
-    / Slick slider
-    %link(href="slick/slick.css" rel="stylesheet" type="text/css")/
-    %link(href="slick/slick-theme.css" rel="stylesheet" type="text/css")/
 
     / Global site tag (gtag.js) - Google Analytics
     %script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-113486610-1")
@@ -72,6 +69,8 @@
     #note.section
       .container
 
+        %h1 Founder’s Note
+
         %p
           How did we get here?
         %p
@@ -87,14 +86,16 @@
         %p
           At its core, problem solving is always more than spreadsheets and code. It is equal parts art and science, equal parts poetry, music and comic book illustration. And where we stand today, we, as a community, have the opportunity to disrupt and reimagine known ways of thinking and we have the power to lay the foundation for the future.
         %p
-          I may not be a comic book illustrator by day, but I am proud of what we have created at Shift Dev. And I invite you to become a part of this movement. Register here (IVAN INSERT LINK here)
+          I may not be a comic book illustrator by day, but I am proud of what we have created at Shift Dev. And I invite you to become a part of this movement. 
+          %a(href="https://shiftconf.co/index.html#tickets") Register here
+          
         %p
           Let’s hack some shit and make a lasting impact.
         %p
           %br/
           Ivan Burazin
           %br/
-          Main dude, Shift Dev
+          Founder, Shift Conference
 
 
     
@@ -196,48 +197,7 @@
   %script(src="js/script.min.js" type="text/javascript")
   %script(src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript")
   %script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript")
-  %script(src="slick/slick.min.js" type="text/javascript")
 
-  / Sponsor slider code
-  :javascript
-    $(document).ready(function(){
-      $('#sponsorsSlider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        variableWidth: true,
-        prevArrow: $('.btn-left'),
-        nextArrow: $('.btn-right'),
-        speed: 4000,
-        responsive: [
-          {
-            breakpoint: 850,
-            settings: "unslick"
-          }
-        ]
-      });
-    });
-
-    $(document).ready(function(){
-      $('#sponsorsSlider2').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        variableWidth: true,
-        prevArrow: $('.btn-left2'),
-        nextArrow: $('.btn-right2'),
-        speed: 4000,
-        responsive: [
-          {
-            breakpoint: 850,
-            settings: "unslick"
-          }
-        ]
-      });
-    });
-  / End Sponsor slider code
 
   / Twitter universal website tag code
   :javascript

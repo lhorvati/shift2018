@@ -61,46 +61,57 @@
             %li
               %a.nav__link(href="index.html#sponsors") Sponsors
             %li
-              %a.nav__link(href="jobs.html") Jobs
+              %a.nav__link.active(href="jobs.html") Jobs
             %li
               %a.nav__link(href="index.html#footer") Contact
             %li
               %a.btn.blue.fill(href="index.html#tickets") Buy Tickets
 
-    / NOTE SECTION **************************************
+    / JOBS SECTION **************************************
     #note.section
       .container
 
-        %h1 Founder’s Note
+        %h1 Jobs
 
         %p
-          How did we get here?
-        %p
-          I didn’t mean to become a coder. I am an accidental tourist on this journey. I wanted to be a comic book illustrator or maybe an architect. I wanted to build things. I wanted to draw. But from a very young age, I knew I wanted to do it on my own — out from under the man. A tall order, indeed.
-        %p
-          I was lucky on this journey, but I worked my ass off to get here. I experienced freedom, failure and, eventually, funding. But freedom is what fueled my drive and became my passion. And all the other freedoms that came with success: Freedom to think. Freedom to create. Over time, I learned that coding and developing are all about creating. It’s an art form.
-        %p
-          Plus, this is Croatia. From a very young age, we are taught to code. It’s a cultural thing unique to the region and it’s why we have some of the best developers in the world. I learned being a coder is not dissimilar from being an artist. In fact, it’s exactly the same. Stay with me here.
-        %p
-          We are all working with a blank canvass. In business and in life — developers and artists — we start with nothing and create something meaningful and with purpose (hopefully). At Shift Dev, that is what we stand for — creating stuff that no one else can imagine — we are all splashing paint (or code) on a blank canvas. As developers, we see things no one else sees. We disrupt. We innovate. We change known perceptions. We solve problems. And, frankly, we hack shit. And we are absolutely unapologetic about it.
-        %p
-          The blankness of that canvass is what keeps us all engaged. It's a concept unique to what we celebrate at Shift Dev — creation. That’s what we stand for.
-        %p
-          At its core, problem solving is always more than spreadsheets and code. It is equal parts art and science, equal parts poetry, music and comic book illustration. And where we stand today, we, as a community, have the opportunity to disrupt and reimagine known ways of thinking and we have the power to lay the foundation for the future.
-        %p
-          I may not be a comic book illustrator by day, but I am proud of what we have created at Shift Dev. And I invite you to become a part of this movement. 
-          %a(href="https://shiftconf.co/index.html#tickets") Register here
-          
-        %p
-          Let’s hack some shit and make a lasting impact.
-        %p
+          Searching for the Job?
           %br/
-          Ivan Burazin
-          %br/
-          Founder, Shift Conference
+          Check out what our sponsors have to offer
+        
+        #jobs
+          %a.jobs__item(href="jobs-modusCreate.html")
+            .jobs__logo
+              %img(src="img/sponsors/sponsors-modus.png" alt="Modus Create")/
+            .jobs__name Modus Create
 
 
-    
+
+
+    / DOWNLOAD SECTION **************************************
+    #download.section.m0
+      .container
+        .download__video
+          %iframe(allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/YOMcSbT82Ks?rel=0" width="100%")
+          //.download__video-btn
+        .heroBox
+          .heroBox__date
+            .heroBox__date--text 31 May & 1 June
+            .heroBox__date--line
+            .heroBox__date--text Split, Croatia
+          .heroBox__heading
+            %strong Largest Developer Conference
+            %br
+            in Southeast Europe
+          .heroBox__buttons
+            %a.btn.blue.fill(href="#tickets") Get Tickets
+
+          .download__row
+            Download our app
+            .download__buttons
+              %a(href="https://itunes.apple.com/il/app/shift-developer-conference/id1237840908?mt=8" target="_blank")
+                %img(src="img/appstore.svg" alt="AppStore")/
+              %a(href="https://play.google.com/store/apps/details?id=co.synergetica.shift" target="_blank")
+                %img(src="img/playstore.svg" alt="PlayStore")/
 
 
     / FOOTER SECTION **************************************
@@ -185,7 +196,6 @@
 
 
     / CODE OF CONDUCT MODAL SECTION **************************************
-
 
 
 

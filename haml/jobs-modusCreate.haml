@@ -1,0 +1,604 @@
+- # encoding: UTF-8
+!!! 5
+%html(lang="hr")
+  %head
+    %title Developer Conference : Shift DEV 2018
+
+    %link(href="/apple-touch-icon.png?v=QEMrJgwEaY" rel="apple-touch-icon" sizes="180x180")/
+    %link(href="favicon-32x32.png?v=QEMrJgwEaY" rel="icon" sizes="32x32" type="image/png")/
+    %link(href="favicon-16x16.png?v=QEMrJgwEaY" rel="icon" sizes="16x16" type="image/png")/
+    %link(href="manifest.json?v=QEMrJgwEaY" rel="manifest")/
+    %link(color="#5bbad5" href="safari-pinned-tab.svg?v=QEMrJgwEaY" rel="mask-icon")/
+    %link(href="favicon.ico?v=QEMrJgwEaY" rel="shortcut icon")/
+    %meta(content="#ffffff" name="theme-color")/
+
+    %meta(charset="UTF-8")/
+    %meta(name="keywords" content="Shift, 2018, developer, developer conference, conference, dev")/
+    %meta(name="description" content="The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
+    %meta(name="author" content="horvaticluka@gmail.com")/
+    %meta(id="meta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover")/
+
+    %meta(property="og:image" content="https://shift.codeanywhere.com/img/top-bg.svg" )/
+    %meta(property="og:title" content="Developer Conference : Shift DEV 2018")/
+    %meta(property="og:discription" content="The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
+    %meta(property="og:url" content="https://shift.codeanywhere.com/" )/
+
+    %link(rel="stylesheet" href="css/main.css")/
+    %link(rel="stylesheet" href="css/query.css")/
+
+
+    / Global site tag (gtag.js) - Google Analytics
+    %script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-113486610-1")
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113486610-1');
+
+  %body
+
+    / NAVBAR SECTION **************************************
+    .navBar
+      .container
+        %a.navBar__logo(href="index.html")
+          %svg(height="56" viewbox="0 0 83 56" width="83" xmlns="http://www.w3.org/2000/svg")
+            %title
+              Shift Conference
+            %path(d="M82.932 55.993H.003V0h82.929v55.993zM2.939 53.068h77.054V2.921H2.939v50.147zm5.616-32.19l2.577-2.344c.895 1.182 2.12 1.8 3.528 1.8 1.152 0 1.865-.4 1.865-1.072 0-.654-.366-.927-1.573-1.181l-1.645-.364c-2.505-.545-3.766-1.908-3.766-4.052 0-2.453 2.048-3.943 5.357-3.943 2.175 0 4.076.672 5.374 1.944l-2.175 2.417c-.896-.981-2.249-1.581-3.492-1.581-1.006 0-1.627.345-1.627.909 0 .6.42.89 1.755 1.181l1.864.417c2.468.545 3.547 1.745 3.547 3.907 0 2.689-2.139 4.325-5.634 4.325-2.523-.001-4.716-.855-5.955-2.363zM21.547 9.757h3.693v5.651c.585-1.215 1.535-1.815 2.851-1.815 1.975 0 2.98 1.253 2.98 3.689v5.651H27.38v-5.27c0-.908-.329-1.363-1.006-1.363-.732 0-1.134.581-1.134 1.654v4.979h-3.692V9.757zm11.406-.055h3.765v3.053h-3.765V9.702zm.036 4.143h3.693v9.086h-3.693v-9.086zm12.03 2.326h-2.013v6.76h-3.692v-6.76H37.96v-2.326h1.353V13.3c0-2.435 1.371-3.652 4.094-3.652.542.006 1.081.067 1.61.182v2.526c-.277-.055-.558-.085-.84-.09-.75 0-1.17.381-1.17 1.036v.545h2.011v2.326-.002zm1.002-2.326h1.517v-2.071l3.694-1.381v3.452h2.102v2.326h-2.102v2.708c0 .836.475 1.308 1.335 1.308.257.003.513-.016.767-.055v2.8c-.822.127-1.316.182-1.828.182-2.688 0-3.967-1.036-3.967-3.2v-3.743h-1.518v-2.326zM17.893 44.924v1.908H8.898v-1.908h8.995z" fill="#FFF" fill-rule="nonzero")
+        .navBar__btn
+
+        .navBar__nav
+          .navBar__close
+          %ul
+            %li
+              %a.nav__link(href="index.html#speakers") Speakers
+            %li
+              %a.nav__link(href="index.html#schedule") Schedule
+            %li
+              %a.nav__link(href="index.html#tickets") Tickets
+            %li
+              %a.nav__link(href="index.html#location") Location
+            %li
+              %a.nav__link(href="index.html#sponsors") Sponsors
+            %li
+              %a.nav__link.active(href="jobs.html") Jobs
+            %li
+              %a.nav__link(href="index.html#footer") Contact
+            %li
+              %a.btn.blue.fill(href="index.html#tickets") Buy Tickets
+
+    / NOTE SECTION **************************************
+    #note.section
+      .container
+        %h1 Jobs - Modus Create
+
+        %p
+          Modus jobs are listed here: 
+          %a(href="https://moduscreate.com/careers/") https://moduscreate.com/careers/
+          %br/
+          All of the positions listed are open as of May 10. 
+
+        %h2 Let’s Talk about Us
+        %p
+          Modus Create is a Product Studio offering consulting services and SaaS products for strategic planning, design and and execution of web-based and mobile products. We work across multiple industries with Fortune 1000, ISVs, and startups to validate, plan and launch new products. Headquartered in Reston, VA, we are a bootstrapped team that has grown from 2 to 100+ people spread around the globe in 7 years, committed to building the best product consulting firm on the planet. We offer a highly collaborative, autonomous and effective working environment. We love and believe in what we do. This is your chance to be part of building something great.
+
+        %h2 Why Modus Create
+        %ul
+          %li Competitive compensation
+          %li Ability to work remotely / telecommute
+          %li Working side-by-side with thought leaders in emerging tech
+        %br/
+        %br/
+        %p Do you have what it takes to join the DC area's most awesome tech company? Let’s start a conversation.
+
+        %h2 Let’s Talk about You
+        %p 
+          %strong You value outcomes above all else: 
+          You have a proven track record shipping great mobile and web products. By understanding the big picture, you articulate strategy and vision with strong written and verbal communication.
+          %br/
+          %strong You Lead by Doing:
+          You realize that the big picture is worthless without getting your hands dirty in the technical details for strategic and tactical problem solving. You understand the value of situational leadership and can adapt to the needs and strength of your team.  
+          %br/
+          %strong You Love Work, Growth and Learning:
+          You dream of working in a culture that values hard work, continued learning and innovation with a commitment to building amazing products for clients and their end users. You’ll stop learning when you are dead, and until then you desire to gain deeper knowledge in technology and business.
+
+
+        // JOB LISTINGS STARTS HERE
+        %h1 Job listings below:
+        %ul
+          %li
+            %a(href="#job-modus-1") Front End Engineer - Angular2+ and Ionic2+
+          %li
+            %a(href="#job-modus-2") Front End Engineer
+          %li
+            %a(href="#job-modus-3") Front End Engineer - ReactJS
+          %li
+            %a(href="#job-modus-4") Manual QA Engineer
+          %li
+            %a(href="#job-modus-5") Full Stack JavaScript Engineer - ReactJS and GraphQL
+          %li
+            %a(href="#job-modus-6") QA Automation Engineer
+          %li
+            %a(href="#job-modus-7") Full Stack Engineer - .NET and JavaScript / Angular 2
+          %li
+            %a(href="#job-modus-8") Senior Devops Engineer
+          %li
+            %a(href="#job-modus-9") Full Stack Engineer - .NET and ReactJS
+          %li
+            %a(href="#job-modus-10") Business Intelligence Developer
+          %li
+            %a(href="#job-modus-11") Xamarin Engineer
+          %li
+            %a(href="#job-modus-12") Senior Software Engineer - NodeJS API
+        
+        // Job item
+        %h2#job-modus-1.job-title Front End Engineer - Angular2+ and Ionic2+
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking, creative problem solver with a passion for core JavaScript. If you’ve got the chops and want to ditch the cubicle, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles. This contract role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.
+        
+        %h2 Responsibilities
+        %ul
+          %li Develop features for device agnostic mobile apps using Angular2+ and Ionic2+
+          %li Collaborate daily with a cross functional team in a distributed environment
+          %li Consult to our end client regarding development best practices
+        
+        %h2 Required Skills and Experience
+        %ul
+          %li Experience delivering high value, heavy UI front-end products
+          %li Experience with Redux (ngrx/store or ng2-redux)
+          %li Good understanding of front-end component based architectures
+          %li Strong experience with Angular2+
+          %li Previous experience building apps with Ionic
+          %li Experience with RxJs Observable patterns
+          %li Strong Javascript basis and very good understand of the JS core (ES6/7)
+          %li Good understanding of HTML5 and CSS3
+          %li Experience with at least one of the SCSS compilers Sass or Less
+          %li Comfortable with SQLite or similar app database tools
+          %li Experience in following Agile/Scrum SDLC
+          %li Be comfortable communicating in a virtual environment via tools like Slack, Zoom, & Github.
+          %li Strong leadership and ability to self-manage
+          %li ​A consistent, reliable internet connection and development-grade hardware
+
+        // Job item
+        %h2#job-modus-2.job-title Front End Engineer
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking, creative problem solver with a passion for core JavaScript. If you’ve got the chops and want to ditch the cubicle, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles. This contract role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.
+
+        %h2 Responsibilities
+        %ul
+          %li	Write lots of quality, high performing JavaScript code
+          %li	Collaborate daily with UX, Engineering, QA and DevOps to deliver functionality to highly visible web apps used in the financial industry
+          %li	Mentor more junior team members regarding development best practices
+          %li	Collaborate daily on an Agile distributed team
+
+        %h2 Required Skills and Experience
+        %ul
+          %li	experience delivering high value, heavy UI front-end products
+          %li	good understanding of front-end component based architectures
+          %li	strong Javascript basis and very good understand of the JS core (ES6/7)
+          %li	Experience with Angular2+
+          %li	good understanding of HTML5 and CSS3
+          %li	experience with at least one of the SCSS compilers Sass or Less
+          %li	Good experience and understanding of .NET is very helpful
+
+        // Job item
+        %h2#job-modus-3.job-title Front End Engineer - ReactJS
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking, creative problem solver with a passion for core JavaScript. If you’ve got the chops and want to ditch the cubicle, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles. This contract role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.
+
+        %h2 Responsibilities
+        %ul
+          %li	Write lots of quality, high performing JavaScript code
+          %li	Development of web apps in ReactJS, Redux
+          %li	Collaborate daily with UX, Engineering, QA and DevOps to deliver functionality for a highly visible web app for a leading educational services company
+          %li	Consult to our end client regarding development best practices
+
+        %h2 Required Skills and Experience
+        %ul
+          %li Good understanding of front-end MVC architectures
+          %li Experience delivering high value, heavy UI front-end products
+          %li Strong experience with GraphQL
+          %li Strong experience with ReactJS and Redux
+          %li Good understanding of HTML5 and CSS3
+          %li Strong Javascript basis and very good understand of the JS core (ES6/7)
+          %li Experience in following Agile/Scrum SDLC
+          %li Experience with at least one of the SCSS compilers: Sass or Less
+          %li ​A consistent, reliable internet connection
+          %li Be comfortable communicating in a virtual environment 
+
+        // Job item
+        %h2#job-modus-4.job-title Manual QA Engineer
+        %h3 Multiple countries, contracted
+        %p Our Manual QA Engineer is a self-starter with a passion for finding bugs.  A strong QA is like a hunter, looking for ways to stress and test a system.  Your ultimate goal is always instilling confidence in the stability of an application for both your team and your customers. Whether you’re consulting across multiple projects and teams or rolling up your sleeves to dig into just one, your flexibility makes all the difference. This contract role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.
+
+        %h2 Your Duties
+        %ul
+          %li	Learn about the system to develop test plans and test cases based upon functional and software design specifications for specific functional areas.
+          %li	Execute test cases, analyze and provide detailed test reports as well as detailed test results analyses
+          %li	Participate actively in functional, system, stress and regression testing activities.
+          %li	Work closely with the development team to analyze, debug and resolve any issues.
+          %li	Participate in product functional reviews, test specifications, code and documentation reviews.
+
+        %h2 Requirements
+        %ul
+          %li	2+ years testing web or mobile or desktop apps, Web preferred
+          %li	Clear written communication skills in order to document concise bug reports and test cases
+          %li	A good understanding of cross-browser testing, typical vulnerabilities
+          %li	Cross-browser and cross-platform testing with tools including BrowserStack
+          %li	Experience using JIRA bug tracking system
+          %li	Experience working in Agile and/or Kanban environments
+
+        %h2 Not required, but priority will be given to candidates who
+        %ul
+          %li	Have an understanding of how app development works and how an app is constructed
+          %li	Prior automation experience - both good and bad!
+          %li	Have MySQL experience
+          %li	Have prior experience setting up and installing VMs
+          %li	Have experience using command line
+          %li	Have knowledge of PHP - to help develop automation suites
+
+
+        // Job item
+        %h2#job-modus-5.job-title Full Stack JavaScript Engineer - ReactJS and GraphQL
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking, creative problem solver with a passion for core JavaScript. If you’ve got the chops and want to ditch the cubicle, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles. This contract role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.
+
+        %h2 Responsibilities
+        %ul
+          %li	Build a new UI for a successful, growing analytics product
+          %li	Write lots of quality, high performing JavaScript code using ReactJS, Redux, Node, GraphQL
+          %li	Collaborate daily with UX, Engineering, QA and DevOps to build and deliver an intuitive, highly visible web app
+          %li	Collaborate, write code, write automated tests, perform code reviews and actively participate on our distributed Agile team
+          %li	Consult to our end client regarding development best practices
+
+        %h2 Required Skills and Experience
+        %ul
+          %li	At least 2 years experience delivering high value, complex UI front-end products
+          %li	Good understanding of modern front-end architectures
+          %li	Strong experience with ReactJS, Redux and Relay
+          %li	Experience in consuming and/or developing APIs using GraphQL, preferably with Apollo
+          %li	Excellent experience with server-side JavaScript / NodeJS
+          %li	Strong Javascript basics and very good understanding of core JS (ES6/7)
+          %li	Experience in following Agile/Scrum SDLC
+          %li	Experience with automated unit, integration and end-to-end testing is highly desirable.
+          %li	Be comfortable communicating in a virtual environment
+          %li	Previous remote team experience
+          %li	​A consistent, reliable internet connection
+
+
+        // Job item
+        %h2#job-modus-6.job-title QA Automation Engineer
+        %h3 Multiple countries, full time
+        %p Are you ready to build great mobile and web-based applications and lead global teams with some of the brightest thought leaders, designers and technologists? As our QA Automation Engineer, you are capable of working on a variety of development projects regardless of type and level of complexity. Whether you are on a project with no test framework or one with thousands of test cases already in place, you can provide complete and effective test strategies for the team. This role may be performed from a remote location and is estimated to require an effort of 40 hours per week.
+
+        %h2 Great QA Engineers are capable of:
+        %ul
+          %li	Pinpointing gaps in test coverage and developing plans to fill those gaps
+          %li	Building upon what is available to help improve testing efforts
+          %li	Understanding the complexity of test automation
+          %li	Knowing which types of testing to incorporate during development
+          %li	Providing feedback for existing test processes
+          %li	Instilling confidence in the stability of an application
+          %li	Handling multiple projects at any given time
+        %p If that sounds like you and you have at least 2-5 years of experience working in QA, we have a place for you.
+
+        %h2 Your Duties
+        %ul
+          %li	Implement automation test solutions based on project needs
+          %li	Collaborate daily on a distributed, cross functional agile team
+          %li	Develop test strategies and POCs for new projects
+          %li	Train clients on new tools and systems
+          %li	Mentor junior team members
+          %li	Write blog posts on QA best practices
+
+        %h2 Required Experience
+        %ul
+          %li	Designing test plans and processes for new products
+          %li	Testing mobile, mobile web and desktop web-based applications
+          %li	Automated functional testing with multiple testing frameworks such as Watir, WebdriverIO, or Codeception
+          %li	Incorporating TDD or BDD practices and their associated frameworks like Jasmine, Mocha, or Cucumber. Experience with Cucumber is preferred
+          %li	Working with Jenkins, Bamboo, CircleCI or comparable continuous integration systems
+          %li	Using Javascript, PHP, Ruby, Python or other comparable languages (multiple languages preferred)
+          %li	Working with JIRA or similar bug tracking system
+          %li	Working in Agile and/or Kanban environments
+
+        %h2 Highly qualified candidates will have
+        %ul
+          %li	Concise written and verbal communication skills for documenting bugs and test plans
+          %li	Track record of active participation and contributions to the testing community (Stack Overflow, QA/ automation framework forums, Meetup groups, blogging, Twitter)
+          %li	Familiarity with database systems, both SQL and NoSQL (For example, MySQL and MongoDB)
+          %li	Prior experience with setting up and installing VMs
+          %li	Grasp of the command line and scripting languages (like Bash and Powershell)
+          %li	Firm understanding of application development and the testing pyramid (UI, Service, Unit)
+          %li	Knowledge of utilizing Docker for testing
+          %li	Experience with API testing
+          %li	Previous experience working as a consultant
+
+
+        // Job item
+        %h2#job-modus-7.job-title Full Stack Engineer - .NET and JavaScript / Angular 2
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking, creative problem solver with a passion for core JavaScript. You also have a strong background in C# / .NET and SQL Server experience can design and develop key components with ease and confidence. If you’ve got the chops, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles.
+
+        %h2 Responsibilities
+        %ul
+          %li	Write web services with .NET and C#, using well-known RESTful web libraries and patterns
+          %li	Design and implement databases with SQL Server
+          %li	Create interfaces to existing legacy systems
+          %li	Assist in migrating .NET product from Web Forms to MVC
+          %li	Refactor .NET code base
+          %li	Write lots of quality, high performing JavaScript code
+          %li	Develop features for both front-end and back-end of device agnostic products
+          %li	Collaborate daily with UX, Engineering, QA and DevOps to deliver functionality for a highly visible web apps for companies at the forefront of their industries
+          %li	Consult to our end clients regarding development best practices
+
+        %h2 Required Skills and Experience
+        %ul
+          %li	Strong experience with team development of object-oriented solutions and highly-configurable enterprise-level applications with large user base.
+          %li	Good understanding of MVC architectures
+          %li	Strong recent experience programming in .NET
+          %li	5+ years of web development experience a must.
+          %li	3+ years with C# in commercial products
+          %li	Strong core JavaScript experience - ES6/ES7
+          %li	Good experience with modern JS Angular 2+
+          %li	Experience writing unit tests and working in a TDD environment
+          %li	Strong knowledge of security best practices, OAuth
+          %li Hands on AWS experience
+
+        // Job item
+        %h2#job-modus-8.job-title Senior Devops Engineer
+        %h3 Multiple countries, contracted
+        %p You embody the interdependence of software development and IT operations. You love when things come together to rapidly develop and deploy products.  We often need to cross the lines between development, quality assurance, and operations. Modus Create helps its clients build products and deploy them in production. If you’ve got the chops and want to ditch the cubicle, apply to the best lean startup development team on the planet. This contract role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.          
+
+        %h2 Job Duties
+        %ul
+          %li	Perform migration of applications from a diverse set of deployment styles and locations to Kubernetes on AWS
+          %li	Refactor a diverse set of application build and deployment processes to fit a single model
+          %li	Coordinate with development and operations teams to support development, testing, and production deployments
+          %li	Integrate monitoring instrumentation into application deployments
+          %li	Collaborate effectively on a remote agile team daily  
+
+        %h2 Required experience
+        %ul
+          %li	At least 3-5 years of experience on a software development or automated QA team, using the tools and practices associated with DevOps
+          %li	Ability to set up a Continuous Deployment pipeline
+          %li	Virtualization and containerization experience, especially with Docker
+          %li	Automated functional testing with Cucumber, Selenium Webdriver, Watir, Capybara, or similar systems
+          %li	Experience with TDD or BDD practices
+          %li	Jenkins, Bamboo, CircleCI or comparable continuous integration systems
+          %li	Linux system administration
+          %li	Proficiency in multiple scripting languages: bash, Ruby, Python, or comparable systems
+          %li	Ability to set up and customize open source software, such as LAMP stack CMS systems and Java applications
+          %li	Familiarity with multiple database systems, both SQL and NoSQL (For example, MySQL and MongoDB)
+          %li	Demonstrated experience in using Amazon Web Services, Heroku, or Google Compute Platform to deploy dev, test, and production applications
+          %li	Experience packaging applications with Docker and deploying applications to Kubernetes clusters
+          %li	Experience deploying applications with Chef, Puppet, Ansible, Terraform, Cloud Formation or similar systems
+          %li	Experience with blue / green deployments
+          %li	Experience with A/B testing
+
+        %h2 Highly qualified candidates will have:
+        %ul
+          %li	An advanced degree in Computer Science, Software Engineering, or a related field or equivalent experience
+          %li	Software estimation skills, including Agile estimation with Story Points and Scrum planning experience.
+          %li	Substantial open source contributions to tools or methodologies used in the DevOps field
+          %li	Have designed and taught classes in an area of technical expertise
+          %li	Track record of active participation across social media (Stack Overflow, programming language/ framework forums, Meetup groups, blogging, Twitter)
+
+
+        // Job item
+        %h2#job-modus-9.job-title Full Stack Engineer - .NET and ReactJS
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking, creative problem solver with a passion for core JavaScript and ReactJS. You also have a strong background in C# / .NET and SQL Server experience can design and develop key components with ease and confidence. If you’ve got the chops, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles. This full-time contract role may be performed from a remote location. It will require an average of 40 hours per week. Candidates within the Western Hemisphere will be given priority.
+
+        %h2 Responsibilities
+        %ul
+          %li	Designs, codes, debugs, optimizes, and releases both frontend and backend components for business and data systems used in the educational business domain.
+          %li	Design and implement databases with SQL Server
+          %li	Refactor .NET code base
+          %li	Write lots of quality, high performing JavaScript code utilizing ReactJS and Node JS
+          %li	Performs code reviews of pull requests
+          %li	Collaborate daily with UX, Engineering, QA and DevOps to deliver functionality for a highly visible web apps for companies at the forefront of their industries
+          %li	Consult to our end clients regarding development best practices
+
+        %h2 Required Skills and Experience
+        %ul
+          %li	Good understanding of MVC architectures
+          %li	Strong recent experience programming in .NET
+          %li	5+ years of web development experience a must.
+          %li	2+ years with C# in commercial products
+          %li	Strong core JavaScript experience - ES6/ES7
+          %li	Good experience with modern Front End JavaScript ReactJS
+          %li	Good experience with modern Back End JavaScript NodeJS
+          %li	Previous experience with WebForms
+          %li	Experience writing unit, integration and acceptance tests and working in a TDD environment
+          %li	Strong knowledge of security best practices, OAuth
+          %li	Experience with Graph QL is preferred
+          %li	Hands on AWS experience is preferred
+
+
+        // Job item
+        %h2#job-modus-10.job-title Business Intelligence Developer
+        %h3 Multiple countries, contracted
+        %p As BI developer, you will embed with our client's team and perform development on a market-leading K-12 SaaS application. You will design and implement Reports to track KPIs most important for measuring success. (from the data layer to the presentation layer). The role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.
+
+        %h2 Essential Functions/Responsibilities
+        %ul
+          %li	Translate business needs and requirements into data analytic and reporting solutions to deliver meaningful information to end users
+          %li	Design, test, and implement BI solutions, including dashboards, drill down/through-paths, and reports
+          %li	Involve in defining the source to target data mappings, business rules, data definitions
+          %li	Provide Pre and Post Production Data Analysis and Validation Reports to ensure data accuracy
+          %li	Collaborate with other team members to incorporate best practices and innovations into related products
+          %li	Stay current on technology trends and identify ways to innovate products in the education space 
+
+        %h2 Minimum Qualifications
+        %ul
+          %li	B.S. in Computer Science or a related field
+          %li	Experience working in an Agile scrum environment
+          %li	5+ years of experience writing SQL queries to perform complex data analysis
+          %li	5+ years of experience in Birst, Pentaho, Tableau or Information Builders
+          %li	Experience of Hadoop related technologies including Apache Kylin is a plus
+          %li	Strong communication and organizational skills
+
+        // Job item
+        %h2#job-modus-11.job-title Xamarin Engineer
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking creative problem solver with a strong background in C#, Xamarin and related technologies to design and develop key components for dynamic, mobile applications for iOS and Android. If you’ve got the chops, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles. This is a full time contract role that can be performed from a remote location. The will require an estimated level of effort of 40 hours per week.
+
+        %h2 Responsibilities
+        %ul
+          %li	Build Xamarin applications utilizing industry standard patterns and best practices for device agnostic applications
+          %li	Collaborate daily with UX, Engineering, QA and DevOps to deliver functionality for a highly visible web apps for companies at the forefront of their industries
+          %li Consult to our end clients regarding development best practices
+
+        %h2 Required Skills and Experience
+        %ul
+          %li	2+ years experience developing web applications in C# and Xamarin
+          %li	Strong experience with team development of object-oriented solutions and highly-configurable enterprise-level applications with large user base.
+          %li	Good experience with Visual Studio and MS SQL Server
+          %li	Previous experience publishing apps to the Apple App Store as well as other public App stores
+          %li	Strong experience working with Xamarin.Forms, XAML, C#
+          %li	Strong UI/UX skills to build responsive mobile apps that can cater to multiple devices and screen sizes
+          %li	Experience with .Net Framework 4.5 and above
+          %li	Experience writing and consuming REST API’s using ASP.NET Web API
+          %li	Experience with SQL Server and SQLite databases
+          %li	Experience writing unit tests and working in a TDD environment
+          %li	Strong knowledge of security best practices, OAuth
+          %li Hands on AWS experience
+
+
+        // Job item
+        %h2#job-modus-12.job-title Senior Software Engineer - NodeJS API
+        %h3 Multiple countries, contracted
+        %p You are a core JavaScript developer, with prior experience building highly scalable APIs. At Modus Create you will collaborate daily on a cross functional, distributed SCRUM team to build better products. We pride ourselves on not just being excellent, but an excellent remote workforce. This is a full time, contract role that will be performed from a remote location. However, you must be willing to collaborate at least 6 hours per day with the client located in EST or GMT-4.          
+
+        %h2 Your Duties
+        %ul
+          %li	Use NodeJS to analyze, code and deliver a server monitoring platform
+          %li Collaborate daily on a distributed agile team 
+
+        %h2 Requirements
+        %ul
+          %li	Strong experience with Core JavaScript 
+          %li	Prior experience developing and documenting APIs with NodeJS.
+          %li	Demonstrable understanding of appropriate frameworks for Node (hapijs, express)
+          %li	Experience working with Oauth or other api authentication
+          %li	Experience working with the Swagger toolset
+          %li	Experience in following Agile/Scrum SDLC
+          %li	Bachelor's degree in a technical field such as computer science, computer engineering or related field
+          %li	A consistent, reliable internet connection
+
+      %a.back-to-top(href="#note")
+
+
+
+
+
+
+
+
+
+
+    / FOOTER SECTION **************************************
+    #footer.section
+      .container
+        .footer__col
+          .footer__logo
+          .footer__copyright
+            All Rights Reserved by 
+            %a(href="https://shiftconf.co/") Shift 
+            © 2018
+            %br/
+            %span#codeOfConduct__link
+              Code of Conduct
+            %a#note__link(href="note.html")
+              Founder’s Note
+        .footer__col
+          %h3 About
+          %p The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
+          .footer-social
+            %a(href="https://twitter.com/shiftsplit")
+              %img(src="img/icons/s-twitter.svg" alt="Shift Twitter")/
+            %a(href="https://www.facebook.com/shiftsplit")
+              %img(src="img/icons/s-facebook.svg" alt="Shift Facebook")/
+            %a(href="https://www.youtube.com/user/TheShiftConference")
+              %img(src="img/icons/s-youtube.svg" alt="Shift Youtube")/
+            %a(href="https://www.flickr.com/photos/shiftsplit/sets/")
+              %img(src="img/icons/s-flicker.svg" alt="Shift Flicker")/
+            %a(href="https://www.instagram.com/shiftsplit/")
+              %img(src="img/icons/s-instagram.svg" alt="Shift Instagram")/
+            
+        .footer__col
+          %h3 Contact
+          .contact
+            Shift Conference
+            %br/
+            %br/
+            114. brigade 8,
+            21000 Split, Croatia
+            %br/
+            %br/
+            %a(href="mailto: shift@shiftconf.co") shift@shiftconf.co
+
+
+
+
+    / CODE OF CONDUCT MODAL SECTION **************************************
+    #codeOfconduct.section
+      #codeOfconduct__close
+      %h1 Conference Code of Conduct
+        
+      %p
+        All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
+      
+      %h2 Need help?
+      %p
+        Leading up to the conference, please contact us via email or twitter and we'll do our best to address your concerns.
+        %br/
+        During the conference, please contact any of the staff.
+      
+      %h2 The Quick Version
+      %p
+        Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
+      
+      %h2 The Less Quick Version
+
+      %p
+        Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
+        %br/
+        Participants asked to stop any harassing behavior are expected to comply immediately.
+        %br/
+        Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.
+        %br/
+        If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.
+        %br/
+        If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded clothing and/or badges.
+        %br/
+        Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
+        %br/
+        We expect participants to follow these rules at conference and workshop venues and conference-related social events.
+
+
+
+    / CODE OF CONDUCT MODAL SECTION **************************************
+
+
+
+
+
+
+
+  %script(crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js")
+  %script(src="js/script.min.js" type="text/javascript")
+  %script(src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript")
+  %script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript")
+
+
+  / Twitter universal website tag code
+  :javascript
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq('init','nzew9');
+    twq('track','PageView');
+  / End Twitter universal website tag code

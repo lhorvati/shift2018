@@ -127,6 +127,8 @@ $(function() {
         $("#codeOfconduct").removeClass("show");
     });
 
+
+    /* ATTENDEE script */
     var currentAttendeePage = 1;
 
     function capitalizeFirstLetter(string) {

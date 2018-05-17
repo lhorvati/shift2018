@@ -43,7 +43,7 @@
     / NAVBAR SECTION **************************************
     .navBar
       .container
-        .navBar__logo
+        %a.navBar__logo(href="index.html")
           %svg(height="56" viewbox="0 0 83 56" width="83" xmlns="http://www.w3.org/2000/svg")
             %title
               Shift Conference
@@ -63,6 +63,8 @@
               %a.nav__link(href="#location") Location
             %li
               %a.nav__link(href="#sponsors") Sponsors
+            %li
+              %a.nav__link(href="jobs.html") Jobs
             %li
               %a.nav__link(href="#footer") Contact
             %li
@@ -1152,7 +1154,7 @@
         .title-desc Buy tickets
 
         .tickets
-          %iframe(src="https://www.eventbrite.com/tickets-external?eid=35075304179&ref=etckt" frameborder="0" height="800" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true")
+          %iframe(src="https://www.eventbrite.com/tickets-external?eid=35075304179&ref=etckt" frameborder="0" height="404" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true")
 
     / PREVIOUS SECTION **************************************
     #previous.section
@@ -1387,6 +1389,9 @@
                   .sponsors__item
                     %a(href="https://www.kiwi.com/en/" target="_blank")
                       %img(src="img/sponsors/sponsors-kiwi.png" alt="Kiwi.com")/
+                  .sponsors__item
+                    %a(href="https://www.splitskabanka.hr/" target="_blank")
+                      %img(src="img/sponsors/sponsors-splitskabanka.svg" alt="Splitska banka")/
 
               .sponsors
                 %h3 Partners
@@ -1572,21 +1577,6 @@
               .sponsors
                 %h3 Supporters
                 .sponsors__group
-                  .sponsors__item.hide
-                    %a(href="" target="_blank")
-                      %img(src="img/sponsors/sponsors-kingict.svg" alt="")/
-                  .sponsors__item.hide
-                    %a(href="" target="_blank")
-                      %img(src="img/sponsors/sponsors-c.svg" alt="")/
-                  .sponsors__item.hide
-                    %a(href="" target="_blank")
-                      %img(src="img/sponsors/sponsors-canada.svg" alt="")/
-                  .sponsors__item.hide
-                    %a(href="" target="_blank")
-                      %img(src="img/sponsors/sponsors-span.svg" alt="Span")/
-                  .sponsors__item.hide
-                    %a(href="" target="_blank")
-                      %img(src="img/sponsors/sponsors-ecp.svg" alt="")/
                   .sponsors__item
                     %a(href="http://www.cisex.org/" target="_blank")
                       %img(src="img/sponsors/sponsors-cise.svg" alt="Cisex")/
@@ -1602,6 +1592,10 @@
                   .sponsors__item
                     %a(href="http://pseudocode.agency/" target="_blank")
                       %img(src="img/sponsors/sponsors-pseudocode.svg" alt="Pseudocode")/
+
+              .sponsors
+                %h3.hidden Supporters
+                .sponsors__group
                   .sponsors__item
                     %a(href="https://www.intercom.com/" target="_blank")
                       %img(src="img/sponsors/sponsors-intercom.svg" alt="Intercom")/
@@ -1614,6 +1608,9 @@
                   .sponsors__item
                     %a(href="https://radix.website/dot-tech" target="_blank")
                       %img(src="img/sponsors/sponsors-techdomains.png" alt="Tech Domains")/
+                  .sponsors__item
+                    %a(href="https://www.neos.hr/" target="_blank")
+                      %img(src="img/sponsors/sponsors-neos.svg" alt="Neos")/
 
 
 

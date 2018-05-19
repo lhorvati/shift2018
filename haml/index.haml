@@ -479,14 +479,33 @@
 
             .speaker
               .speaker__image
+                %img(srcset="img/speakers/marcoCecconi@1x.jpg 1x, img/speakers/marcoCecconi@2x.jpg 2x" src="img/speakers/marcoCecconi@1x.jpg" alt="Marco Cecconi")/
+              .speaker__name Marco Cecconi
+              .speaker__title
+                Engineering Manager at 
+                %br/
+                %span Toptal
+              .speaker__more-btn.btn.blue.empty.small(target="19") Read more
+              #sm19.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/sklivvz/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/sklivvz" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/sklivvz" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Marco has more than twenty years experience writing software and leading software teams. He's been part of the core team at Stack Overflow until 2017 and is now helping teams excel working remotely at Toptal as an Engineering Manager.
+
+            .speaker
+              .speaker__image
                 %img(srcset="img/speakers/peter-hopwood@1x.jpg 1x, img/speakers/peter-hopwood@2x.jpg 2x" src="img/speakers/peter-hopwood@1x.jpg" alt="Petar Hopwood")/
               .speaker__name Peter Hopwood
               .speaker__title
                 Conference Host at 
                 %br/
                 %span Hopwood Communications & Copywriting
-              .speaker__more-btn.btn.blue.empty.small(target="19") Read more
-              #sm19.speaker__more
+              .speaker__more-btn.btn.blue.empty.small(target="20") Read more
+              #sm20.speaker__more
                 .speaker__social
                   %a.social.linkedin(href="https://www.linkedin.com/in/peterhopwoodpublicspeaking/" target="_blank")
                     %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
@@ -504,8 +523,8 @@
                 CEO at 
                 %br/
                 %span Codeanywhere
-              .speaker__more-btn.btn.blue.empty.small(target="20") Read more
-              #sm20.speaker__more
+              .speaker__more-btn.btn.blue.empty.small(target="21") Read more
+              #sm21.speaker__more
                 .speaker__social
                   %a.social.linkedin(href="https://www.linkedin.com/in/ivanburazin" target="_blank")
                     %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
@@ -513,24 +532,7 @@
                     %img(src="img/icons/s-twitter.svg" alt="Twitter")/
                 .social__bio Ivan is the founder of the Shift Conference. Alongside this he co-founded Codeanywhere, the first cross platform Cloud IDE, which now has over a million users worldwide.
 
-            .speaker
-              .speaker__image
-                %img(srcset="img/speakers/marcoCecconi@1x.jpg 1x, img/speakers/marcoCecconi@2x.jpg 2x" src="img/speakers/marcoCecconi@1x.jpg" alt="Marco Cecconi")/
-              .speaker__name Marco Cecconi
-              .speaker__title
-                Engineering Manager at 
-                %br/
-                %span Toptal
-              .speaker__more-btn.btn.blue.empty.small(target="21") Read more
-              #sm21.speaker__more
-                .speaker__social
-                  %a.social.linkedin(href="https://www.linkedin.com/in/sklivvz/" target="_blank")
-                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
-                  %a.social.twitter(href="https://twitter.com/sklivvz" target="_blank")
-                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
-                  %a.social.github(href="https://github.com/sklivvz" target="_blank")
-                    %img(src="img/icons/s-github.svg" alt="GitHub")/
-                .social__bio Marco has more than twenty years experience writing software and leading software teams. He's been part of the core team at Stack Overflow until 2017 and is now helping teams excel working remotely at Toptal as an Engineering Manager.
+            
 
 
           .more-comming
@@ -633,7 +635,7 @@
                     %img(src="img/icons/s-github.svg" alt="GitHub")/
                 .social__bio Ivan is a .NET freelance developer who loves Xamarin, Azure, and automating whatever he can. When he's not developing something new, he's either trying to fix something inherited or consults (still) with enthusiasm. On those occasional "hobby moments" he tests and demolishes new technologies in search of something useful and teaches Xamarin at University of Zagreb.
 
-            .speaker.hide
+            .speaker
               .speaker__image
                 %img(srcset="img/speakers/tomislavCanic@1x.jpg 1x, img/speakers/tomislavCanic@2x.jpg 2x" src="img/speakers/tomislavCanic@1x.jpg" alt="Tomislav Čanić")/
               .speaker__name Tomislav Čanić
@@ -646,7 +648,7 @@
                 .speaker__social
                   %a.social.linkedin(href="https://www.linkedin.com/in/tomislav-canic/" target="_blank")
                     %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
-                .social__bio 
+                .social__bio A hardware guy with 3 decades of experience with microcontrollers and assembly language, author of a few articles related to AVR micros. Loves exploring new micros on the market and various ways of wireless communication.
 
             .speaker
               .speaker__image
@@ -770,9 +772,9 @@
                   .agenda__list-item
                     .agenda__time 13:45 - 14:30
                     .agenda__desc
-                      %span.al-title Forging Ahead with Containers -
-                      %span.al-name Tarik Makota & Cyrille Fauvel
-                      %span.al-company (AWS & Autodesk)
+                      %span.al-title The Product Manager is Your Best Friend -
+                      %span.al-name Marc Abraham
+                      %span.al-company (Mind the Product)
 
                   .agenda__list-item
                     .agenda__time 14:30 - 15:15
@@ -810,14 +812,14 @@
                       %span.al-company (Five)
 
                   .agenda__list-item
-                    .agenda__time 17:30 - 18:00
+                    .agenda__time 17:30 - 18:15
                     .agenda__desc
-                      %span.al-title Project Things - Unifying the Internet of Things -
-                      %span.al-name Kalyan Dikshit
-                      %span.al-company (Mozilla)
+                      %span.al-title Forging Ahead with Containers -
+                      %span.al-name Tarik Makota & Cyrille Fauvel
+                      %span.al-company (AWS & Autodesk)
 
                   .agenda__list-item
-                    .agenda__time 18:00 - 18:30
+                    .agenda__time 18:15 - 18:45
                     .agenda__desc
                       %span.al-title So you want a remote job, uh? -
                       %span.al-name Marco Cecconi
@@ -878,18 +880,18 @@
                       %span.al-company
 
                   .agenda__list-item
-                    .agenda__time 16:30 - 17:30
-                    .agenda__desc
-                      %span.al-title TBA
-                      %span.al-name Samsoor Hemat
-                      %span.al-company (venITure)
-
-                  .agenda__list-item
-                    .agenda__time 17:30 - 19:30
+                    .agenda__time 16:30 - 18:30
                     .agenda__desc
                       %span.al-title Building battery powered IoT devices in server-less environment -
                       %span.al-name Tomislav Čanić
                       %span.al-company (Aduro)
+
+                  .agenda__list-item
+                    .agenda__time 18:30 - 20:30
+                    .agenda__desc
+                      %span.al-title Kubernetes the AWSome Way! -
+                      %span.al-name Tarik Makota
+                      %span.al-company (AWS)
 
                   .agenda__list-item
                     .agenda__time 21:00 – 04:00
@@ -971,7 +973,7 @@
                   .agenda__list-item
                     .agenda__time 16:00 - 16:30
                     .agenda__desc
-                      %span.al-title Coffee brak
+                      %span.al-title Coffee Break
                       %span.al-name
                       %span.al-company
 
@@ -990,14 +992,14 @@
                       %span.al-company (Arduino)
 
                   .agenda__list-item
-                    .agenda__time 17:30 - 18:15
+                    .agenda__time 17:30 - 18:00
                     .agenda__desc
-                      %span.al-title The Product Manager is Your Best Friend -
-                      %span.al-name Marc Abraham
-                      %span.al-company (Mind the Product)
+                      %span.al-title Project Things - Unifying the Internet of Things -
+                      %span.al-name Kalyan Dikshit
+                      %span.al-company (Mozilla)
 
                   .agenda__list-item
-                    .agenda__time 18:15 - 19:00
+                    .agenda__time 18:00 - 18:45
                     .agenda__desc
                       %span.al-title Closing Ceremony
                       %span.al-name
@@ -1039,8 +1041,15 @@
                     .agenda__time 13:45 - 14:45
                     .agenda__desc
                       %span.al-title TBA
-                      %span.al-name Marko Hrnjak (Algebra)
-                      %span.al-company
+                      %span.al-name Marko Hrnjak
+                      %span.al-company (Algebra)
+
+                  .agenda__list-item
+                    .agenda__time 15:00 - 16:00
+                    .agenda__desc
+                      %span.al-title TBA
+                      %span.al-name Samsoor Hemat
+                      %span.al-company (venITure)
 
                   .agenda__list-item
                     .agenda__time 16:00 - 16:30

@@ -1248,6 +1248,46 @@
 		"opt": 0,
 		"q": 81
 		},
+	"\/img\/speakers\/tiffanyTse@1x.jpg": {
+		"ft": 16384,
+		"iS": 7288,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/tiffanyTse@1x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/tiffanyTse@2x.jpg": {
+		"ft": 16384,
+		"iS": 18795,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/tiffanyTse@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/tomislavCanic@1x.jpg": {
+		"ft": 16384,
+		"iS": 4156,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/tomislavCanic@1x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/tomislavCanic@2x.jpg": {
+		"ft": 16384,
+		"iS": 10411,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/tomislavCanic@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
 	"\/img\/speakers\/tomislavSlovenec@1x.jpg": {
 		"ft": 16384,
 		"iS": 10313,
@@ -1341,11 +1381,11 @@
 		"oT": 1,
 		"q": 81
 		},
-	"\/img\/sponsors\/sponsors-aspire.svg": {
+	"\/img\/sponsors\/sponsors-aspira.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/sponsors\/sponsors-aspire.svg",
+		"oAP": "\/img\/sponsors\/sponsors-aspira.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1941,6 +1981,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/sponsors\/sponsors-raztpz.png": {
+		"ft": 32768,
+		"iS": 5168,
+		"oA": 0,
+		"oAP": "\/img\/sponsors\/sponsors-raztpz.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 81
 		},
 	"\/img\/sponsors\/sponsors-reversinglabs.svg": {
 		"ft": 2097152,

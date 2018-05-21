@@ -498,14 +498,33 @@
 
             .speaker
               .speaker__image
+                %img(srcset="img/speakers/tiffanyTse@1x.jpg 1x, img/speakers/tiffanyTse@2x.jpg 2x" src="img/speakers/tiffanyTse@1x.jpg" alt="Tiffany Tse")/
+              .speaker__name Tiffany Tse
+              .speaker__title
+                Developer Advocacy Lead at 
+                %br/
+                %span Shopify
+              .speaker__more-btn.btn.blue.empty.small(target="20") Read more
+              #sm20.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/tiffanyjtse/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/tiffany_tse" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/tiffanytse" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Tiffany is a Developer Advocacy Lead at Shopify on the Partnerships Education Team, based in Toronto, Canada. She also works as a professor teaching interaction design and development in the joint York University/Sheridan College Design Program. Tiffany specializes in front end development, theming, user experience design, and accessibility.
+
+            .speaker
+              .speaker__image
                 %img(srcset="img/speakers/peter-hopwood@1x.jpg 1x, img/speakers/peter-hopwood@2x.jpg 2x" src="img/speakers/peter-hopwood@1x.jpg" alt="Petar Hopwood")/
               .speaker__name Peter Hopwood
               .speaker__title
                 Conference Host at 
                 %br/
                 %span Hopwood Communications & Copywriting
-              .speaker__more-btn.btn.blue.empty.small(target="20") Read more
-              #sm20.speaker__more
+              .speaker__more-btn.btn.blue.empty.small(target="48") Read more
+              #sm48.speaker__more
                 .speaker__social
                   %a.social.linkedin(href="https://www.linkedin.com/in/peterhopwoodpublicspeaking/" target="_blank")
                     %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
@@ -523,8 +542,8 @@
                 CEO at 
                 %br/
                 %span Codeanywhere
-              .speaker__more-btn.btn.blue.empty.small(target="21") Read more
-              #sm21.speaker__more
+              .speaker__more-btn.btn.blue.empty.small(target="49") Read more
+              #sm49.speaker__more
                 .speaker__social
                   %a.social.linkedin(href="https://www.linkedin.com/in/ivanburazin" target="_blank")
                     %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
@@ -749,25 +768,32 @@
                       %span.al-company (Codeanywhere)
 
                   .agenda__list-item
-                    .agenda__time 11:15 - 12:00
+                    .agenda__time 11:15 - 11:45
+                    .agenda__desc
+                      %span.al-title Designing for impact: Why beautiful design is not enough? - 
+                      %span.al-name Vladimir Koncar
+                      %span.al-company (Five)
+
+                  .agenda__list-item
+                    .agenda__time 11:45 - 12:00
+                    .agenda__desc
+                      %span.al-title Sponsor talk
+                      %span.al-name 
+                      %span.al-company (Infinum)
+
+                  .agenda__list-item
+                    .agenda__time 12:00 - 12:45
                     .agenda__desc
                       %span.al-title webpack: Building a Platform -
                       %span.al-name Sean Larkin
                       %span.al-company (Microsoft)
 
                   .agenda__list-item
-                    .agenda__time 12:00 - 12:45
-                    .agenda__desc
-                      %span.al-title Google Home meets containers on Google Cloud -
-                      %span.al-name Mete Atamel
-                      %span.al-company (Google)
-
-                  .agenda__list-item
                     .agenda__time 12:45 - 13:45
                     .agenda__desc
-                      %span.al-title Lunch
-                      %span.al-name 
-                      %span.al-company
+                      %span.al-title Lunch By Shopify | Building Accessible Experiences -
+                      %span.al-name Tiffany Tse
+                      %span.al-company (Shopify)
 
                   .agenda__list-item
                     .agenda__time 13:45 - 14:30
@@ -798,35 +824,35 @@
                       %span.al-company
 
                   .agenda__list-item
-                    .agenda__time 16:30 - 17:00
+                    .agenda__time 16:30 - 17:15
                     .agenda__desc
                       %span.al-title Never feel `/home` sick: how GitHub is unlocking mobility for developers -
                       %span.al-name Kathy Simpson
                       %span.al-company (GitHub)
 
                   .agenda__list-item
-                    .agenda__time 17:00 - 17:30
+                    .agenda__time 17:15 - 17:45
                     .agenda__desc
-                      %span.al-title Designing for impact: Why beautiful design is not enough? - 
-                      %span.al-name Vladimir Koncar
-                      %span.al-company (Five)
+                      %span.al-title How To Jump Start a Career in Open Source -
+                      %span.al-name Eric Schabell
+                      %span.al-company (Red Hat)
 
                   .agenda__list-item
-                    .agenda__time 17:30 - 18:15
+                    .agenda__time 17:45 - 18:30
                     .agenda__desc
                       %span.al-title Forging Ahead with Containers -
                       %span.al-name Tarik Makota & Cyrille Fauvel
                       %span.al-company (AWS & Autodesk)
 
                   .agenda__list-item
-                    .agenda__time 18:15 - 18:45
+                    .agenda__time 18:30 - 19:00
                     .agenda__desc
                       %span.al-title So you want a remote job, uh? -
                       %span.al-name Marco Cecconi
                       %span.al-company (Toptal)
 
                   .agenda__list-item
-                    .agenda__time 21:00 - 04:00
+                    .agenda__time 21:00 - 03:00
                     .agenda__desc
                       %span.al-title After Party
                       %span.al-name @ Fabrique pub
@@ -894,7 +920,7 @@
                       %span.al-company (AWS)
 
                   .agenda__list-item
-                    .agenda__time 21:00 – 04:00
+                    .agenda__time 21:00 – 03:00
                     .agenda__desc
                       %span.al-title After Party
                       %span.al-name @ Fabrique pub
@@ -935,11 +961,18 @@
                       %span.al-company (Pivotal)
 
                   .agenda__list-item
-                    .agenda__time 12:15 - 12:45
+                    .agenda__time 12:15 - 12:30
                     .agenda__desc
-                      %span.al-title Talk
-                      %span.al-name TBA
-                      %span.al-company
+                      %span.al-title Sponsor talk
+                      %span.al-name 
+                      %span.al-company Kiwi
+
+                  .agenda__list-item
+                    .agenda__time 12:30 - 12:45
+                    .agenda__desc
+                      %span.al-title Sponsor talk
+                      %span.al-name Internet of Peopele
+                      %span.al-company (IOP)
 
                   .agenda__list-item
                     .agenda__time 12:45 - 13:45
@@ -978,35 +1011,35 @@
                       %span.al-company
 
                   .agenda__list-item
-                    .agenda__time 16:30 - 17:00
+                    .agenda__time 16:30 - 17:15
                     .agenda__desc
-                      %span.al-title How To Jump Start a Career in Open Source -
-                      %span.al-name Eric Schabell
-                      %span.al-company (Red Hat)
+                      %span.al-title Google Home meets containers on Google Cloud -
+                      %span.al-name Mete Atamel
+                      %span.al-company (Google)
 
                   .agenda__list-item
-                    .agenda__time 17:00 - 17:30
+                    .agenda__time 17:15 - 17:45
                     .agenda__desc
                       %span.al-title From Web to Desktop, the Future of Modern Web Applications That Need to Speak to Your Hardware -
                       %span.al-name Luca Cipriani
                       %span.al-company (Arduino)
 
                   .agenda__list-item
-                    .agenda__time 17:30 - 18:00
+                    .agenda__time 17:45 - 18:30
                     .agenda__desc
                       %span.al-title Project Things - Unifying the Internet of Things -
                       %span.al-name Kalyan Dikshit
                       %span.al-company (Mozilla)
 
                   .agenda__list-item
-                    .agenda__time 18:00 - 18:45
+                    .agenda__time 18:30 - 19:00
                     .agenda__desc
                       %span.al-title Closing Ceremony
                       %span.al-name
                       %span.al-company
 
                   .agenda__list-item
-                    .agenda__time 21:00 - 04:00
+                    .agenda__time 22:30 - 05:00
                     .agenda__desc
                       %span.al-title After Party
                       %span.al-name @ Central club
@@ -1066,7 +1099,7 @@
                       %span.al-company (Zalando)
 
                   .agenda__list-item
-                    .agenda__time 21:00 - 04:00
+                    .agenda__time 22:30 - 05:00
                     .agenda__desc
                       %span.al-title After Party
                       %span.al-name @ Central club
@@ -1588,6 +1621,9 @@
                   .sponsors__item
                     %a(href="https://www.veniture.net" target="_blank")
                       %img(src="img/sponsors/sponsors-veniture.png" alt="VenITure")/
+                  .sponsors__item
+                    %a(href="http://www.aspira.hr/" target="_blank")
+                      %img(src="img/sponsors/sponsors-aspira.svg" alt="Aspira")/
 
               .sponsors
                 %h3 Supporters
@@ -1607,6 +1643,9 @@
                   .sponsors__item
                     %a(href="http://pseudocode.agency/" target="_blank")
                       %img(src="img/sponsors/sponsors-pseudocode.svg" alt="Pseudocode")/
+                  .sponsors__item
+                    %a(href="https://www.raza.hr/" target="_blank")
+                      %img(src="img/sponsors/sponsors-raztpz.png" alt="Razvojna Agencija Zagreb")/
 
               .sponsors
                 %h3.hidden Supporters

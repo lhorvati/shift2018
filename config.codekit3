@@ -848,7 +848,7 @@
 		},
 	"\/img\/speakers\/ivanBurazin@1x.jpg": {
 		"ft": 16384,
-		"iS": 7892,
+		"iS": 7031,
 		"oA": 0,
 		"oAP": "\/img\/speakers\/ivanBurazin@1x.jpg",
 		"oF": 0,
@@ -858,7 +858,7 @@
 		},
 	"\/img\/speakers\/ivanBurazin@2x.jpg": {
 		"ft": 16384,
-		"iS": 21932,
+		"iS": 20216,
 		"oA": 0,
 		"oAP": "\/img\/speakers\/ivanBurazin@2x.jpg",
 		"oF": 0,
@@ -1068,6 +1068,66 @@
 		"opt": 0,
 		"q": 81
 		},
+	"\/img\/speakers\/marinTvrdic@1x.jpg": {
+		"ft": 16384,
+		"iS": 6538,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/marinTvrdic@1x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/marinTvrdic@2x.jpg": {
+		"ft": 16384,
+		"iS": 16257,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/marinTvrdic@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/markoHrnjak@1x.jpg": {
+		"ft": 16384,
+		"iS": 5180,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/markoHrnjak@1x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/markoHrnjak@2x.jpg": {
+		"ft": 16384,
+		"iS": 17184,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/markoHrnjak@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/matevzPetek@1x.jpg": {
+		"ft": 16384,
+		"iS": 5846,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/matevzPetek@1x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/matevzPetek@2x.jpg": {
+		"ft": 16384,
+		"iS": 14509,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/matevzPetek@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
 	"\/img\/speakers\/mathiasMeyer@1x.jpg": {
 		"ft": 16384,
 		"iS": 7966,
@@ -1223,6 +1283,26 @@
 		"iS": 15316,
 		"oA": 0,
 		"oAP": "\/img\/speakers\/richardArchbold@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/samsoorHemat@1x.jpg": {
+		"ft": 16384,
+		"iS": 6275,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/samsoorHemat@1x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/samsoorHemat@2x.jpg": {
+		"ft": 16384,
+		"iS": 15859,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/samsoorHemat@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

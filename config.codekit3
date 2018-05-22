@@ -1108,6 +1108,26 @@
 		"opt": 0,
 		"q": 81
 		},
+	"\/img\/speakers\/michalSanger@1x.jpg": {
+		"ft": 16384,
+		"iS": 5282,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/michalSanger@1x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
+	"\/img\/speakers\/michalSanger@2x.jpg": {
+		"ft": 16384,
+		"iS": 13434,
+		"oA": 0,
+		"oAP": "\/img\/speakers\/michalSanger@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 81
+		},
 	"\/img\/speakers\/PatrickDesjardins@1x.jpg": {
 		"ft": 16384,
 		"iS": 11167,
@@ -1426,6 +1446,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/sponsors\/sponsors-bdr.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/sponsors\/sponsors-bellabeat.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/sponsors\/sponsors-bellabeat.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -2085,6 +2115,16 @@
 		"oT": 1,
 		"q": 81
 		},
+	"\/img\/sponsors\/sponsors-soss.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/sponsors\/sponsors-soss.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/sponsors\/sponsors-span.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2190,6 +2230,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/sponsors\/sponsors-tzsdz.png": {
+		"ft": 32768,
+		"iS": 17089,
+		"oA": 0,
+		"oAP": "\/img\/sponsors\/sponsors-tzsdz.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 81
 		},
 	"\/img\/sponsors\/sponsors-unist.svg": {
 		"ft": 2097152,

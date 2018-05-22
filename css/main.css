@@ -825,6 +825,10 @@ a.social:hover {
   border-radius: 100%;
   overflow: hidden;
 }
+#speakers .speaker .speaker__image img {
+  -webkit-filter: grayscale();
+          filter: grayscale();
+}
 #speakers .speaker .speaker__name {
   text-transform: uppercase;
   color: #005df2;

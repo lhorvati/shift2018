@@ -2,7 +2,7 @@
 !!! 5
 %html(lang="hr")
   %head
-    %title Developer Conference : Shift DEV 2018 - Jobs
+    %title Developer Conference : Shift DEV 2018
 
     %link(href="/apple-touch-icon.png?v=QEMrJgwEaY" rel="apple-touch-icon" sizes="180x180")/
     %link(href="favicon-32x32.png?v=QEMrJgwEaY" rel="icon" sizes="32x32" type="image/png")/
@@ -67,56 +67,95 @@
             %li
               %a.btn.blue.fill(href="index.html#tickets") Buy Tickets
 
-    / JOBS SECTION **************************************
+    / NOTE SECTION **************************************
     #note.section
       .container
-
-        %h1 Jobs
+        %h1 Jobs - Typeqast
 
         %p
-          Searching for the Job?
+          All Typeqast jobs are listed here: 
+          %a(href="http://typeqast.com/careers.html") http://typeqast.com/careers
+
+        %h2 About Typeqast
+        %p
+          We are a creative technology company dedicated to building relevant digital
+          products. As a partner to mostly Dutch clients, we help businesses update and
+          improve existing products in response to new opportunities and ever-evolving
+          market needs. Our headquarters are based in Amsterdam, Netherlands with
+          business development, sales and collaborative client support experts who help
+          clients define the development requirements and business-oriented functional
+          tests. Our technology and software development centre is located in Split,
+          Croatia with dedicated agile teams managing the development for our clients.
           %br/
-          Check out what our sponsors have to offer
+          %br/
+          Our teams deliver software solutions with the best in class methods in agile
+          development. The development team is composed of a number of agile teams
+          with an ever-expanding portfolio of skills. We believe in DevOps principles,
+          infrastructure and test automation and continuous delivery. Our autonomous
+          self-organizing agile teams deliver products reliably with high quality and in
+          time. We combine disciplined front and back end software development
+          practices with the right amount of architectural planning.
+
+        %h2 The Role
+        %p 
+          We believe in fully owning our applications, right from writing the code,
+          through to building and maintaining our own infrastructure using AWS and
+          utilizing continuous deployment. We pride ourselves on building amazing
+          teams who strive to improve by the day and enjoy taking on new challenges.
+          %br/
+          %br/
+          As a Software Developer, you’ll be working in an agile team delivering features
+          to build and improve an amazing software platforms. Our teams are moving
+          quickly and constantly improving, both in the way we work and the tools we
+          use. If you love working with your team from the initial problem to delivering
+          the best solution for our customers, this is for you!
+          The more complicated the projects you have been involved in the better; we
+          are looking for a person with a “can do” attitude.
+
+
+        // JOB LISTINGS STARTS HERE
+        %h1 Job listings below:
+
+        // Job item
+        %h2.job-title .NET Developer
+        %h3 Multiple countries, contracted
+        %p You are a forward thinking, creative problem solver with a passion for core JavaScript. If you’ve got the chops and want to ditch the cubicle, apply to the best lean startup development team on the planet. At Modus Create you will collaborate with a cross-functional Scrum team to deliver high quality innovative products in short sprint cycles. This contract role may be performed from a remote location and requires a level of effort estimated at 40 hours per week.
         
-        #jobs
-          %a.jobs__item(href="jobs-modusCreate.html")
-            .jobs__logo
-              %img(src="img/sponsors/sponsors-modus.png" alt="Modus Create")/
-            .jobs__name Modus Create
+        %h2 Duties & Responsibilities
+        %ul
+          %li Helping to define user stories and acceptance criteria
+          %li Actively working on software design, development and deployment
+          %li Automated testing (E2E, integration) 
+        
+        %h2 Experience & Skills
+        %ul
+          %li Excellent C# skills
+          %li Good knowledge of .NET ecosystem
+          %li Good OO skills and knowledge of OO and SOLID design principles
+          %li Good understanding of TDD and BDD principles
+          %li Experience of working in an Agile development environment
+          %li Desired experience with CI/CD (GitHub, TeamCity)
+          %li Desired experience with Git
+          %li Desired experience with AWS or other cloud platforms
 
-          %a.jobs__item(href="jobs-typeqast.html")
-            .jobs__logo
-              %img(src="img/sponsors/sponsors-typeqast.svg" alt="Typeqast")/
-            .jobs__name Typeqast
+        %h2 Core Technologies
+        %ul
+          %li C#, ASP.NET, WebAPI
+          %li JavaScript, NodeJS, Angular, React
+          %li NUnit/SpecFlow/Karma/Mocha/Jasmine or other testing framework
+          %li AWS cloud-first development
+          %li Relational and NoSql databases (MS SQL, MySQL, DynamoDB)
+
+
+      %a.back-to-top(href="#note")
 
 
 
 
-    / DOWNLOAD SECTION **************************************
-    #download.section.m0
-      .container
-        .download__video
-          %iframe(allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/YOMcSbT82Ks?rel=0" width="100%")
-          //.download__video-btn
-        .heroBox
-          .heroBox__date
-            .heroBox__date--text 31 May & 1 June
-            .heroBox__date--line
-            .heroBox__date--text Split, Croatia
-          .heroBox__heading
-            %strong Largest Developer Conference
-            %br
-            in Southeast Europe
-          .heroBox__buttons
-            %a.btn.blue.fill(href="#tickets") Get Tickets
 
-          .download__row
-            Download our app
-            .download__buttons
-              %a(href="https://itunes.apple.com/il/app/shift-developer-conference/id1237840908?mt=8" target="_blank")
-                %img(src="img/appstore.svg" alt="AppStore")/
-              %a(href="https://play.google.com/store/apps/details?id=co.synergetica.shift" target="_blank")
-                %img(src="img/playstore.svg" alt="PlayStore")/
+
+
+
 
 
     / FOOTER SECTION **************************************

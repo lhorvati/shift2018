@@ -1638,6 +1638,17 @@
 		"oT": 1,
 		"q": 81
 		},
+	"\/img\/sponsors\/dalmacijaNews.png": {
+		"ft": 32768,
+		"iS": 3879,
+		"oA": 0,
+		"oAP": "\/img\/sponsors\/dalmacijaNews.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 81
+		},
 	"\/img\/sponsors\/dalmacijavino.png": {
 		"ft": 32768,
 		"iS": 14754,
@@ -2260,6 +2271,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 81
+		},
+	"\/img\/sponsors\/splitTechCity.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/sponsors\/splitTechCity.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/sponsors\/svGroup.png": {
 		"ft": 32768,

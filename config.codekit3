@@ -1595,6 +1595,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/sponsors\/centralklub.png": {
+		"ft": 32768,
+		"iS": 5941,
+		"oA": 0,
+		"oAP": "\/img\/sponsors\/centralklub.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 81
+		},
 	"\/img\/sponsors\/cise.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1875,6 +1886,26 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 81
+		},
+	"\/img\/sponsors\/jamnica.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/sponsors\/jamnica.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/sponsors\/jana.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/sponsors\/jana.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/sponsors\/jetbrains.svg": {
 		"ft": 2097152,

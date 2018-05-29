@@ -252,6 +252,20 @@
 		"uDQ": 0,
 		"uUN": 0
 		},
+	"\/haml\/jobs-inetec.haml": {
+		"cB": 0,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
+		"nEA": 0,
+		"oA": 0,
+		"oAP": "\/jobs-inetec.html",
+		"oF": 0,
+		"oFM": 2,
+		"oS": 0,
+		"uDQ": 0,
+		"uUN": 0
+		},
 	"\/haml\/jobs-modusCreate.haml": {
 		"cB": 0,
 		"cDA": 0,
@@ -1849,6 +1863,17 @@
 		"iS": 7127,
 		"oA": 0,
 		"oAP": "\/img\/sponsors\/ictZupanija.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 81
+		},
+	"\/img\/sponsors\/inetec.png": {
+		"ft": 32768,
+		"iS": 13826,
+		"oA": 0,
+		"oAP": "\/img\/sponsors\/inetec.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

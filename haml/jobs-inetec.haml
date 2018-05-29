@@ -2,7 +2,7 @@
 !!! 5
 %html(lang="hr")
   %head
-    %title Developer Conference : Shift DEV 2018 - Jobs
+    %title Developer Conference : Shift DEV 2018
 
     %link(href="/apple-touch-icon.png?v=QEMrJgwEaY" rel="apple-touch-icon" sizes="180x180")/
     %link(href="favicon-32x32.png?v=QEMrJgwEaY" rel="icon" sizes="32x32" type="image/png")/
@@ -67,61 +67,99 @@
             %li
               %a.btn.blue.fill(href="index.html#tickets") Buy Tickets
 
-    / JOBS SECTION **************************************
+    / NOTE SECTION **************************************
     #note.section
       .container
+        %h1 Jobs - INETEC
 
-        %h1 Jobs
-
+        %h2 About Inetec
         %p
-          Searching for the Job?
-          %br/
-          Check out what our sponsors have to offer
-        
-        #jobs
-          %a.jobs__item(href="jobs-modusCreate.html")
-            .jobs__logo
-              %img(src="img/sponsors/modus.png" alt="Modus Create")/
-            .jobs__name Modus Create
+          For almost thirty years, INETEC has been a name synonymous with technological and service excellence in nuclear industry. We have gained international acclaim for developing technologies for nuclear power plant examination and repair, inspection and repair services, as well as various engineering studies that we conduct as our regular scope of activities.
+        %p
+          In doing so, we are active in permanent programs of research, development, design, construction and fabrication of equipment, tools, plugs and probes, including software and instruments for non-destructive examination.
+        %p
+          You can find out more about Inetec at 
+          %a(href="https://www.inetec.hr/")
+            www.inetec.hr.
 
-          %a.jobs__item(href="jobs-typeqast.html")
-            .jobs__logo
-              %img(src="img/sponsors/typeqast.svg" alt="Typeqast")/
-            .jobs__name Typeqast
 
-          %a.jobs__item(href="jobs-inetec.html")
-            .jobs__logo
-              %img(src="img/sponsors/inetec.png" alt="Inetec")/
-            .jobs__name Inetec
+        %h2 Career in Inetec
+        %p 
+          A career at INETEC - Institute for Nuclear Technology offers you a variety of opportunities to develop and grow professionally. As INETEC good practice is highly dynamic and transparent, in such a working environment you can learn from experts in the field and be involved in the world's top projects. This implies travel opportunities and exciting challenges as well. If you are willing to explore your capabilities, consider a career at INETEC and send us your application.
+        %p
+          Send your applications to 
+          %a(href="mailto:inetec@inetec.hr")
+            inetec@inetec.hr.
+          Looking forward to getting to know you.
 
 
 
+        // JOB LISTINGS STARTS HERE
+        %h1 Job listings below:
 
-    / DOWNLOAD SECTION **************************************
-    #download.section.m0
-      .container
-        .download__video
-          %iframe(allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/YOMcSbT82Ks?rel=0" width="100%")
-          //.download__video-btn
-        .heroBox
-          .heroBox__date
-            .heroBox__date--text 31 May & 1 June
-            .heroBox__date--line
-            .heroBox__date--text Split, Croatia
-          .heroBox__heading
-            %strong Largest Developer Conference
-            %br
-            in Southeast Europe
-          .heroBox__buttons
-            %a.btn.blue.fill(href="#tickets") Get Tickets
+        // Job item
+        %h2.job-title C# developer
+        %p Development of both desktop and web applications as a full stack developer. Applications are designed for energy technology applications, complex manipulator control or advanced signal processing. 
 
-          .download__row
-            Download our app
-            .download__buttons
-              %a(href="https://itunes.apple.com/il/app/shift-developer-conference/id1237840908?mt=8" target="_blank")
-                %img(src="img/appstore.svg" alt="AppStore")/
-              %a(href="https://play.google.com/store/apps/details?id=co.synergetica.shift" target="_blank")
-                %img(src="img/playstore.svg" alt="PlayStore")/
+        %h2 Education Level:
+        %ul
+          %li	Master's degree in Software Engineering / Information Systems
+          %li	University type: preferably Computing/Computing Science
+          %li Previous experience: 3-5 years
+
+        %h2 Main skills:
+        %ul
+          %li C#
+          %li ASP.NET MVC
+
+        %h2 Supporting skills:
+        %ul
+          %li	Windows Presentation Foundation (WPF)
+          %li	JavaScrip
+          %li	ASP.NET
+          %li	MySQL
+          %li	KnockoutJS 
+          %li	Microsoft SQL Server
+          %li	.NET Framework
+          %li	Entity Framework
+          %li	JavaScript Libraries
+          %li	HTML
+
+
+        // Job item
+        %h2.job-title Embedded developer
+        %p Development of embedded for manipulator control and signal acquisition and processing. Systems are based on different platforms, including embedded Linux, RTOS, bare metal and FPGA.
+
+        %h2 Education Level:
+        %ul
+          %li	Master's degree in Electrical Engineering
+          %li	University type: preferably Electrical engineering,
+          %li Previous experience: 2-5 years
+
+        %h2 Main skills:
+        %ul
+          %li C
+          %li C++
+
+        %h2 Supporting skills:
+        %ul
+          %li	Embedded Linux
+          %li	Control systems, regulation loops
+          %li	FPGA (Verilog) programming
+          %li	Electronics design (Altium designer)
+
+
+
+
+      %a.back-to-top(href="#note")
+
+
+
+
+
+
+
+
 
 
     / FOOTER SECTION **************************************

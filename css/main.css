@@ -1525,6 +1525,21 @@ a.social:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
+#footer .footer-previous {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+#footer .footer-previous a {
+  margin-right: 20px;
+  color: #005df2;
+  font-weight: 400;
+}
+#footer .footer-previous a:last-child {
+  margin-right: 0;
+}
 #footer .contact {
   font-family: 'Maison Mono', sans-serif;
   font-size: 12px;

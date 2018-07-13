@@ -252,14 +252,14 @@
 		"uDQ": 0,
 		"uUN": 0
 		},
-	"\/haml\/index2019.haml": {
+	"\/haml\/index2018.haml": {
 		"cB": 0,
 		"cDA": 0,
 		"eHT": 0,
 		"ft": 256,
 		"nEA": 0,
 		"oA": 0,
-		"oAP": "\/index2019.html",
+		"oAP": "\/index2018.html",
 		"oF": 0,
 		"oFM": 2,
 		"oS": 0,
@@ -2553,6 +2553,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/index2018.html",
+		"oF": 0
+		},
+	"\/index2019.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/index2019.html",
 		"oF": 0
 		},
 	"\/jobs-inetec.html": {

@@ -2,7 +2,7 @@
 !!! 5
 %html(lang="hr")
   %head
-    %title Developer Conference : Shift DEV 2019
+    %title Developer Conference : Shift DEV 2018
 
     %link(href="/apple-touch-icon.png?v=QEMrJgwEaY" rel="apple-touch-icon" sizes="180x180")/
     %link(href="favicon-32x32.png?v=QEMrJgwEaY" rel="icon" sizes="32x32" type="image/png")/
@@ -13,19 +13,22 @@
     %meta(content="#ffffff" name="theme-color")/
 
     %meta(charset="UTF-8")/
-    %meta(name="keywords" content="Shift, 2019, developer, developer conference, conference, dev")/
-    %meta(name="description" content="The biggest Developer Conference in Southeast Europe. This event, Shift 2019 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
+    %meta(name="keywords" content="Shift, 2018, developer, developer conference, conference, dev")/
+    %meta(name="description" content="The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
     %meta(name="author" content="horvaticluka@gmail.com")/
     %meta(id="meta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover")/
 
     %meta(property="og:image" content="https://shift.codeanywhere.com/img/top-bg.svg" )/
-    %meta(property="og:title" content="Developer Conference : Shift DEV 2019")/
-    %meta(property="og:discription" content="The biggest Developer Conference in Southeast Europe. This event, Shift 2019 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
+    %meta(property="og:title" content="Developer Conference : Shift DEV 2018")/
+    %meta(property="og:discription" content="The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.")/
     %meta(property="og:url" content="https://shift.codeanywhere.com/" )/
 
     %link(rel="stylesheet" href="css/main.css")/
     %link(rel="stylesheet" href="css/query.css")/
 
+    / Slick slider
+    %link(href="slick/slick.css" rel="stylesheet" type="text/css")/
+    %link(href="slick/slick-theme.css" rel="stylesheet" type="text/css")/
 
     / Global site tag (gtag.js) - Google Analytics
     %script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-113486610-1")
@@ -51,15 +54,21 @@
           .navBar__close
           %ul
             %li
-              %a.nav__link(href="#about") About
+              %a.nav__link(href="#speakers") Speakers
+            %li
+              %a.nav__link(href="#schedule") Schedule
             %li
               %a.nav__link(href="#tickets") Tickets
             %li
               %a.nav__link(href="#location") Location
             %li
+              %a.nav__link(href="#sponsors") Sponsors
+            %li
+              %a.nav__link(href="jobs.html") Jobs
+            %li
               %a.nav__link(href="#footer") Contact
             %li
-              %a.btn.blue.fill(href="https://www.eventbrite.com/e/shift-developer-conference-2019-tickets-46462014135" target="_blank") Buy Tickets
+              %a.btn.blue.fill(href="#tickets") Buy Tickets
 
     / HERO SECTION **************************************
     #hero.section
@@ -67,25 +76,22 @@
 
         .heroBox
           .heroBox__date
-            .heroBox__date--text 30 & 31 May
+            .heroBox__date--text 31 May & 1 June
             .heroBox__date--line
             .heroBox__date--text Split, Croatia
           .heroBox__heading
-            Thanks for being part of
-            %br/
-            %strong Shift 2018
-            %br/
-            Largest Developer Conference
-            %br/
+            %strong Largest Developer Conference
+            %br
             in Southeast Europe
           .heroBox__buttons
-            %a.btn.blue.empty(href="https://www.eventbrite.com/e/shift-developer-conference-2019-tickets-46462014135" target="_blank") Get Tickets
+            %a.btn.blue.empty(href="#tickets") Get Tickets
             .heroBox__buttons-spacer or
             %a.btn.link.white(href="https://www.youtube.com/watch?v=6QuD43OQo38" target="_blenk") Watch our Video Review
-
+            //.heroBox__buttons-spacer or
+            //%a.btn.link.white(href="https://play.rtl.hr/digitalshapers/uzivo" target="_blenk") Watch Live Stream
 
         .heroDate
-          30 & 31 May 2019
+          31 May & 1 June 2018
 
 
     / ABOUT SECTION **************************************
@@ -93,14 +99,14 @@
       .container
         %h1.small
           %span Shift 
-          Developer Conference 2019
+          Developer Conference 2018
         .title-desc The biggest Developer Conference in Southeast Europe
 
         .about__event
           %img(srcset="img/about@1x.jpg 1x, img/about@2x.jpg 2x" src="img/about@1x.jpg" alt="Shift Conference")/
           %i.icon.calendar
           %h2 Event
-          %p The biggest Developer Conference in Southeast Europe. This event, Shift 2019 is the eight and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
+          %p The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
 
         .about__wrap
           .about__talks
@@ -113,8 +119,1149 @@
             %h2 Workshops
             %p Industry experts and thought leaders will bring you up to speed with some of the most exciting technologies: React, React Native, Webpack, and Symphony. Two-hour long hands-on workshops will be running in parallel with the rest of the event so don't forget your laptops. Workshops will take place in Area 55, seating capacity is limited so come early.
 
+    / NUMBERS SECTION **************************************
+    #numbers.section
+      .container
+        .numbers
+          .numbers__item
+            %span#count-days 2
+            days
+          .numbers__item
+            %span#count-workshops 10
+            workshops
+          .numbers__item
+            %span#count-speakers 24
+            speakers
+          .numbers__item
+            %span#count-attendees 1300
+            attendees
+
+    / SPEAKERS SECTION **************************************
+    #speakers.section
+      .container
+        %h1 Speakers
+        .title-desc Meet our professionals
+
+        .small-nav1
+          #speakers-mainLink.small-nav1__item.active
+            main track speakers
+          #speakers-areaLink.small-nav1__item
+            workshop speakers
+
+        #speakers-main.speakers-content.show
+          .speakers-wrap
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/rasmusLerdorf@1x.jpg 1x, img/speakers/rasmusLerdorf@2x.jpg 2x" src="img/speakers/rasmusLerdorf@1x.jpg" alt="Rasmus Lerdorf")/
+              .speaker__name Rasmus Lerdorf
+              .speaker__title
+                Creator of
+                %br/
+                %span PHP
+              .speaker__more-btn.btn.blue.empty.small(target="1") Read more
+              #sm1.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/rlerdorf/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/rasmus" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/rlerdorf" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Rasmus Lerdorf is known for having gotten the PHP project off the ground in 1995 and has contributed to a number of other open source projects over the years. He was an infrastructure architect at Yahoo! for more than 7 years and joined Etsy in 2012. He was born in Greenland, grew up in Denmark and Canada and has a Systems Design engineering degree from the University of Waterloo.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/kathy-simpson@1x.png 1x, img/speakers/kathy-simpson@2x.png 2x" src="img/speakers/kathy-simpson@1x.png" alt="Kathy Simpson")/
+              .speaker__name Kathy Simpson
+              .speaker__title
+                Senior Director of Product at
+                %br/
+                %span GitHub
+              .speaker__more-btn.btn.blue.empty.small(target="2") Read more
+              #sm2.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/kathleensimpson/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/simpsoka" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/simpsoka" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Kathy Simpson is Director of Product Management at GitHub. Kathy has an engineering background and has always been a maker at heart with a passion for technology. Prior to Github, Kathy worked as Senior Product Manager at Heroku on the Human Interface Team and has taken products from early to prototypes to launch day consistently for the past 10 years.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/seanLarkin@1x.jpg 1x, img/speakers/seanLarkin@2x.jpg 2x" src="img/speakers/seanLarkin@1x.jpg" alt="Sean Larkin")/
+              .speaker__name Sean Larkin
+              .speaker__title
+                Technical Program Manager at
+                %br/
+                %span Microsoft
+              .speaker__more-btn.btn.blue.empty.small(target="3") Read more
+              #sm3.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/seanthomaslarkin/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/TheLarkInn" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/thelarkinn" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Former technical support representative turned renegade software engineer and web developer, driven by the need to help people through the code he writes. Sean is a member of the Webpack core team, angular team and angular-cli core team. Lives to teach others about the world of Web Development. Obsessed with AngularJS, readability, Webpack, bundlers, tooling, and anything that helps Web Dev and Engineering easier and more enjoyable for anyone!
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/wium-lie@1x.jpg 1x, img/speakers/wium-lie@2x.jpg 2x" src="img/speakers/wium-lie@1x.jpg" alt="Håkon Wium Lie")/
+              .speaker__name Håkon Wium Lie
+              .speaker__title
+                Creator of
+                %br/
+                %span CSS
+              .speaker__more-btn.btn.blue.empty.small(target="4") Read more
+              #sm4.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/howcome/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/wiumlie" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                .social__bio Håkon Wium Lie proposed Cascading Style Sheets (CSS) while working with Tim Berners-Lee at CERN in 1994. Along with Bert Bos, he developed a set of ideas for web style sheets into a implementeable W3C Recommendation. As CTO of Opera Software he shepherded Opera's implementation, and he proposed the Acid2 test to ensure that all browsers complied. He is the chairman of YesLogic, which makes the Prince CSS-to-PDF formatter. In 2015, Håkon sailed from Lima to Easter Island on a balsa raft, making sure the world-wide web is truly world-wide. He holds a MS from the MIT Media Lab, and a PhD from the University of Oslo.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/luca-cipriani@1x.jpg 1x, img/speakers/luca-cipriani@2x.jpg 2x" src="img/speakers/luca-cipriani@1x.jpg" alt="Luca Cipriani")/
+              .speaker__name Luca Cipriani
+              .speaker__title
+                CIO at
+                %br/
+                %span Arduino
+              .speaker__more-btn.btn.blue.empty.small(target="5") Read more
+              #sm5.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/lucacipriani/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/mastrolinux?lang=en" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/mastrolinux" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio 
+                  I am Linux expert and DevOps advocate, now CIO for Arduino and responsible of the Arduino Create platform, my goal is to move millions users to the cloud.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/marcAbraham@1x.jpg 1x, img/speakers/marcAbraham@2x.jpg 2x" src="img/speakers/marcAbraham@1x.jpg" alt="Marc Abraham")/
+              .speaker__name Marc Abraham
+              .speaker__title
+                Chief Product Officer at 
+                %br/
+                %span Settled
+              .speaker__more-btn.btn.blue.empty.small(target="6") Read more
+              #sm6.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/abrahammarc/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                .social__bio
+                  Marc Abraham is an experienced product management practitioner, who has worked for a large number of successful digital organisations. He is Chief Product Officer at Settled, a London based startup which takes the pain out of property transactions.
+                  He's also global ProductTank coordinator at Mind the Product, working closely with organiser of 140+ product management meetups across the globe.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/devarisBrown@1x.jpg 1x, img/speakers/devarisBrown@2x.jpg 2x" src="img/speakers/devarisBrown@1x.jpg" alt="DeVaris Brown")/
+              .speaker__name DeVaris Brown
+              .speaker__title
+                Product Manager at
+                %br/
+                %span Heroku
+              .speaker__more-btn.btn.blue.empty.small(target="8") Read more
+              #sm8.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://linkedin.com/in/devarispbrown" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://mobile.twitter.com/devarispbrown?lang=en" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/devarispbrown" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  DeVaris Brown is a currently PM @ Heroku responsible for Developer Experience. Prior to Heroku, he worked at Microsoft, Intel, Cisco, Visual Supply Company, and Zendesk in various PM and engineering roles. When he’s not sitting in front of a computer, you can find DeVaris behind a camera capturing moments in time or behind a set of turntables, moving a sea of people through music.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/cyrilleFauvel@1x.jpg 1x, img/speakers/cyrilleFauvel@2x.jpg 2x" src="img/speakers/cyrilleFauvel@1x.jpg" alt="Cyrille Fauvel")/
+              .speaker__name Cyrille Fauvel
+              .speaker__title
+                Worldwide Sr. Manager at
+                %br/
+                %span Autodesk
+              .speaker__more-btn.btn.blue.empty.small(target="9") Read more
+              #sm9.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/cyrillefauvel/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/fauvelcyrille" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/cyrillef" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  Application Developer, and Solution Architect for various technical and graphical applications. Particularly interested in problem resolution and modern programming techniques.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/PatrickDesjardins@1x.jpg 1x, img/speakers/PatrickDesjardins@2x.jpg 2x" src="img/speakers/PatrickDesjardins@1x.jpg" alt="Patrick Desjardins")/
+              .speaker__name Patrick Desjardins
+              .speaker__title
+                Senior Software Engineer at
+                %br/
+                %span Netflix
+              .speaker__more-btn.btn.blue.empty.small(target="10") Read more
+              #sm10.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/patrickdesjardins/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/mrdesjardins" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/MrDesjardins" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  Patrick Desjardins is a senior software engineer at Netflix and former engineer at Microsoft on MSDN, Visual Studio Online, and Microsoft Team. His field of expertise is web technologies since early 2000. In the last decade, Patrick wrote hundreds of blog articles and several books.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/KeyferMathewson@1x.jpg 1x, img/speakers/KeyferMathewson@2x.jpg 2x" src="img/speakers/KeyferMathewson@1x.jpg" alt="Keyfer Mathewson")/
+              .speaker__name Keyfer Mathewson
+              .speaker__title
+                Front End Developer at
+                %br/
+                %span Shopify
+              .speaker__more-btn.btn.blue.empty.small(target="11") Read more
+              #sm11.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/keyfer/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/keyfermath" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/keyfer" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  Keyfer Mathewson is currently a Front End Developer working for Shopify, from his home in Edmonton, Canada. Before Shopify, Keyfer worked for a small Canadian design agency leading a team of developers building award-winning websites. When he's not in front of his computer, you can find Keyfer hiking with his fiance and puppy, playing hockey, or pretending to be good at video games.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/EricSchabell@1x.jpg 1x, img/speakers/EricSchabell@2x.jpg 2x" src="img/speakers/EricSchabell@1x.jpg" alt="Eric Schabell")/
+              .speaker__name Eric Schabell
+              .speaker__title
+                Global Technology Evangelist Director at
+                %br/
+                %span Redhat
+              .speaker__more-btn.btn.blue.empty.small(target="12") Read more
+              #sm12.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/ericschabell/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/ericschabell?lang=en" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/eschabell" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  Eric is Red Hat’s Global Technology Evangelist Director, and is renowned in the development community as a speaker, lecturer, author and baseball expert. In his current role he's central to defining, managing and bringing to market integrated cloud solutions showcasing the full power of Red Hat’s comprehensive portfolio of established and emergent technologies. It allows him to share his deep expertise of Red Hat’s open source technologies and cloud computing.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/meteAtamel@1x.jpg 1x, img/speakers/meteAtamel@2x.jpg 2x" src="img/speakers/meteAtamel@1x.jpg" alt="Mete Atamel")/
+              .speaker__name Mete Atamel
+              .speaker__title
+                Senior Developer Advocate at
+                %br/
+                %span Google
+              .speaker__more-btn.btn.blue.empty.small(target="13") Read more
+              #sm13.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/meteatamel" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/meteatamel" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/meteatamel" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  I’m a Developer Advocate at Google, currently focused on helping developers with Google Cloud Platform. As a long-time Java and a recent C# developer, I like to compare the two ecosystems. Prior to Google, I worked at Microsoft, Skype, Adobe, EMC, and Nokia building apps and services on various web, mobile and cloud platforms. Originally from Cyprus, I currently live in Greenwich, not too far away from the prime meridian.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/johnFeminella@1x.jpg 1x, img/speakers/johnFeminella@2x.jpg 2x" src="img/speakers/johnFeminella@1x.jpg" alt="Cyrille Fauvel")/
+              .speaker__name John Feminella
+              .speaker__title
+                Advisor at
+                %br/
+                %span Pivotal
+              .speaker__more-btn.btn.blue.empty.small(target="14") Read more
+              #sm14.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/johnxf/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/jxxf" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/fj" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  John Feminella is an avid technologist, occasional public speaker, and curiosity advocate. He serves as an advisor to Pivotal, and is the cofounder of a tiny analytics monitoring project, UpHex. John lives in Charlottesville, VA and likes meta-jokes, milkshakes, and referring to himself in the third person in speaker bios.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/richardArchbold@1x.jpg 1x, img/speakers/richardArchbold@2x.jpg 2x" src="img/speakers/richardArchbold@1x.jpg" alt="Richard Archbold")/
+              .speaker__name Richard Archbold
+              .speaker__title
+                Senior Engineering Director at 
+                %br/
+                %span Intercom
+              .speaker__more-btn.btn.blue.empty.small(target="15") Read more
+              #sm15.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/richardarchbold" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/rarchbarch" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/richardarchbold" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio
+                  Richard Archbold is Senior Engineering Director at Intercom, a highly successful and fast growing Irish technology startup company that provides customer communication software to Internet businesses. Intercom's mission is to make web business personal. Previous to Intercom, Richard has worked as a senior technology manager at Facebook Dublin where he was part of the team responsible for keeping Facebook online. Rich also spent eight years at Amazon in Dublin, helping found their Dublin office. While at Amazon, Rich held a number of positions ranging from engineer to senior engineering manager in both Amazon.com and AWS.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/tarikMakota@1x.jpg 1x, img/speakers/tarikMakota@2x.jpg 2x" src="img/speakers/tarikMakota@1x.jpg" alt="Tarik Makota")/
+              .speaker__name Tarik Makota
+              .speaker__title
+                Partner Solutions Architect at
+                %br/
+                %span Amazon Web Services
+              .speaker__more-btn.btn.blue.empty.small(target="16") Read more
+              #sm16.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/tarik-makota-7627574/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/tarik_makota" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/tmakota" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Tarik Makota is a solutions architect with the Amazon Web Services Partner Network. He provides technical guidance, design advice and thought leadership to AWS’ most strategic software partners. His career includes over 20 years of experience in software development and architecture roles across various industries such as financial printing, benefit delivery and administration and financial services.
+            
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/kalyanDikshit@1x.jpg 1x, img/speakers/kalyanDikshit@2x.jpg 2x" src="img/speakers/kalyanDikshit@1x.jpg" alt="Kalyan Dikshit")/
+              .speaker__name Kalyan Dikshit
+              .speaker__title
+                Mozilla Tech Speaker at
+                %br/
+                %span Mozilla
+              .speaker__more-btn.btn.blue.empty.small(target="17") Read more
+              #sm17.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/umkdikshit/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/decode_dev" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/decode-dev" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio U.M.K. Dikshit is a Mozilla Tech Speaker, Representative, and part of its Hyderabad Community, India. He currently also devotes his time with ICRISAT where he works with drones to develop and trial techniques to connect farmers. Overall he is your next door friendly software guy.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/vladimirKoncar@1x.jpg 1x, img/speakers/vladimirKoncar@2x.jpg 2x" src="img/speakers/vladimirKoncar@1x.jpg" alt="Vladimir Koncar")/
+              .speaker__name Vladimir Koncar
+              .speaker__title
+                Design Team Lead at
+                %br/
+                %span FIVE
+              .speaker__more-btn.btn.blue.empty.small(target="18") Read more
+              #sm18.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/koncar/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/koncarovski" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/Koncarovski" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Vladimir Končar is a product designer and a creative leader with 15 years of experience in building and leading multidisciplinary teams and a proven track for designing and delivering products and interactive experiences. He works as a design team lead at Five agency and is a co-founder of Amodo startup. In the design community, he is known for organizing and leading UX meetups within IxDA Croatia.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/marcoCecconi@1x.jpg 1x, img/speakers/marcoCecconi@2x.jpg 2x" src="img/speakers/marcoCecconi@1x.jpg" alt="Marco Cecconi")/
+              .speaker__name Marco Cecconi
+              .speaker__title
+                Engineering Manager at 
+                %br/
+                %span Toptal
+              .speaker__more-btn.btn.blue.empty.small(target="19") Read more
+              #sm19.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/sklivvz/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/sklivvz" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/sklivvz" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Marco has more than twenty years experience writing software and leading software teams. He's been part of the core team at Stack Overflow until 2017 and is now helping teams excel working remotely at Toptal as an Engineering Manager.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/tiffanyTse@1x.jpg 1x, img/speakers/tiffanyTse@2x.jpg 2x" src="img/speakers/tiffanyTse@1x.jpg" alt="Tiffany Tse")/
+              .speaker__name Tiffany Tse
+              .speaker__title
+                Developer Advocacy Lead at 
+                %br/
+                %span Shopify
+              .speaker__more-btn.btn.blue.empty.small(target="20") Read more
+              #sm20.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/tiffanyjtse/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/tiffany_tse" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/tiffanytse" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Tiffany is a Developer Advocacy Lead at Shopify on the Partnerships Education Team, based in Toronto, Canada. She also works as a professor teaching interaction design and development in the joint York University/Sheridan College Design Program. Tiffany specializes in front end development, theming, user experience design, and accessibility.
+                  
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/michalSanger@1x.jpg 1x, img/speakers/michalSanger@2x.jpg 2x" src="img/speakers/michalSanger@1x.jpg" alt="Michal Sänger")/
+              .speaker__name Michal Sänger
+              .speaker__title
+                Full-stack Javascript Tech Lead at 
+                %br/
+                %span kiwi.com
+              .speaker__more-btn.btn.blue.empty.small(target="21") Read more
+              #sm21.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/michalsanger/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/sanger_foodblog" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                .social__bio Michal works in Kiwi.com as a Full-stack Javascript Tech Lead so his passion is to solve every issue with Javascript. He dreams about web apps written in ReactJS, mobile apps in React Native, backend implemented as serverless and API implemented as a GraphQL.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/marinTvrdic@1x.jpg 1x, img/speakers/marinTvrdic@2x.jpg 2x" src="img/speakers/marinTvrdic@1x.jpg" alt="Marin Tvrdić")/
+              .speaker__name Marin Tvrdic
+              .speaker__title
+                Chapter Leader at 
+                %br/
+                %span Internet of People
+              .speaker__more-btn.btn.blue.empty.small(target="22") Read more
+              #sm22.speaker__more
+                .speaker__social
+                  %a.social.twitter(href="https://twitter.com/krtyca" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                .social__bio Owner of 2 companies, a crypto enthusiast who has been involved in crypto through the mining and in 2017 joined Internet of People as Croatian Chapter leader.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/peter-hopwood@1x.jpg 1x, img/speakers/peter-hopwood@2x.jpg 2x" src="img/speakers/peter-hopwood@1x.jpg" alt="Petar Hopwood")/
+              .speaker__name Peter Hopwood
+              .speaker__title
+                Conference Host at 
+                %br/
+                %span Hopwood Communications & Copywriting
+              .speaker__more-btn.btn.blue.empty.small(target="48") Read more
+              #sm48.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/peterhopwoodpublicspeaking/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/hopwoodmedia" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="#" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Global public speaking, impact and presence coach helping professionals, brands and teams to shine with impact when it matters. In demand across Europe and Middle East.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/ivanBurazin@1x.jpg 1x, img/speakers/ivanBurazin@2x.jpg 2x" src="img/speakers/ivanBurazin@1x.jpg" alt="Ivan Burazin")/
+              .speaker__name Ivan Burazin
+              .speaker__title
+                CEO at 
+                %br/
+                %span Codeanywhere
+              .speaker__more-btn.btn.blue.empty.small(target="49") Read more
+              #sm49.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/ivanburazin" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/ivanburazin" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                .social__bio Ivan is the founder of the Shift Conference. Alongside this he co-founded Codeanywhere, the first cross platform Cloud IDE, which now has over a million users worldwide.
 
 
+
+        #speakers-area.speakers-content
+          .speakers-wrap
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/grgurGrisogono@1x.jpg 1x, img/speakers/grgurGrisogono@2x.jpg 2x" src="img/speakers/grgurGrisogono@1x.jpg" alt="Grgur Grisogono")/
+              .speaker__name Grgur Grisogono
+              .speaker__title
+                Software Architect at 
+                %br/
+                %span Modus Create
+              .speaker__more-btn.btn.blue.empty.small(target="51") Read more
+              #sm51.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://hr.linkedin.com/in/grguru" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/ggrgur" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/grgur" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Web application expert with 17 years of experience in building faster and reusable user interfaces with JavaScript. Grgur is a contributor to Webpack, co-author of Ext JS in Action SE, author of many acclaimed articles, three-times conference chairman, speaker, and a software architect at Modus Create.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/andreaGrisogono@1x.jpg 1x, img/speakers/andreaGrisogono@2x.jpg 2x" src="img/speakers/andreaGrisogono@1x.jpg" alt="Andrea Grisogono")/
+              .speaker__name Andrea Grisogono
+              .speaker__title
+                Product Manager at
+                %br/
+                %span Appacus
+              .speaker__more-btn.btn.blue.empty.small(target="52") Read more
+              #sm52.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Andrea is a product manager with 11 years of experience who is passionate about leading teams that develop amazing apps. Loves free-climbing and extra dark chocolate.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/tarikMakota@1x.jpg 1x, img/speakers/tarikMakota@2x.jpg 2x" src="img/speakers/tarikMakota@1x.jpg" alt="Tarik Makota")/
+              .speaker__name Tarik Makota
+              .speaker__title
+                Partner Solutions Architect at
+                %br/
+                %span Amazon Web Services
+              .speaker__more-btn.btn.blue.empty.small(target="53") Read more
+              #sm53.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/tarik-makota-7627574/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/tarik_makota" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/tmakota" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Tarik Makota is a solutions architect with the Amazon Web Services Partner Network. He provides technical guidance, design advice and thought leadership to AWS’ most strategic software partners. His career includes over 20 years of experience in software development and architecture roles across various industries such as financial printing, benefit delivery and administration and financial services.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/damirBrcic@1x.jpg 1x, img/speakers/damirBrcic@2x.jpg 2x" src="img/speakers/damirBrcic@1x.jpg" alt="Damir Brcic")/
+              .speaker__name Damir Brcic
+              .speaker__title
+                Chief Information Officer at
+                %br/
+                %span Splitsko - dalmatinska županija
+              .speaker__more-btn.btn.blue.empty.small(target="54") Read more
+              #sm54.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://hr.linkedin.com/in/damir-brcic-44739b25" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/dbrcic" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                .social__bio He worked as system engineer, software developer and long-time IT entrepreneur. Open Source Software Advocate. Now manages ICT Županija project, with the motivation of launching the entire IT sector in the Split-Dalmatia County
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/ivanCuljak@1x.jpg 1x, img/speakers/ivanCuljak@2x.jpg 2x" src="img/speakers/ivanCuljak@1x.jpg" alt="Ivan Čuljak")/
+              .speaker__name Ivan Culjak
+              .speaker__title
+                Software Engineer at
+                %br/
+                %span Toptal
+              .speaker__more-btn.btn.blue.empty.small(target="55") Read more
+              #sm55.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://hr.linkedin.com/in/culjakivan" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/culjakivan" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/CuljakIvan" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Ivan is a .NET freelance developer who loves Xamarin, Azure, and automating whatever he can. When he's not developing something new, he's either trying to fix something inherited or consults (still) with enthusiasm. On those occasional "hobby moments" he tests and demolishes new technologies in search of something useful and teaches Xamarin at University of Zagreb.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/tomislavCanic@1x.jpg 1x, img/speakers/tomislavCanic@2x.jpg 2x" src="img/speakers/tomislavCanic@1x.jpg" alt="Tomislav Čanić")/
+              .speaker__name Tomislav Canic
+              .speaker__title
+                Senior Developer at
+                %br/
+                %span Aduro
+              .speaker__more-btn.btn.blue.empty.small(target="56") Read more
+              #sm56.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/tomislav-canic/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                .social__bio A hardware guy with 3 decades of experience with microcontrollers and assembly language, author of a few articles related to AVR micros. Loves exploring new micros on the market and various ways of wireless communication.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/tomislavSlovenec@1x.jpg 1x, img/speakers/tomislavSlovenec@2x.jpg 2x" src="img/speakers/tomislavSlovenec@1x.jpg" alt="Tomislav Slovenec")/
+              .speaker__name Tomislav Slovenec
+              .speaker__title
+                Javascript Engineer at
+                %br/
+                %span Infinum
+              .speaker__more-btn.btn.blue.empty.small(target="57") Read more
+              #sm57.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://hr.linkedin.com/in/tomislav-slovenec-ba3788b3" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                .social__bio A Javascript engineer from Infinum with 3 years of experience, a lot of love for Frontend development and a bit of experience with Ruby. I have some experience with speaking at Webcamp Ljubljana and various meetups in Zagreb, mainly on Frontend related topics.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/paulAdams@1x.jpg 1x, img/speakers/paulAdams@2x.jpg 2x" src="img/speakers/paulAdams@1x.jpg" alt="Paul Adams")/
+              .speaker__name Paul Adams
+              .speaker__title
+                Open Source Lead at
+                %br/
+                %span Zalando
+              .speaker__more-btn.btn.blue.empty.small(target="58") Read more
+              #sm58.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/pauljadams/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/therealpadams" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                  %a.social.github(href="https://github.com/therealpadams" target="_blank")
+                    %img(src="img/icons/s-github.svg" alt="GitHub")/
+                .social__bio Paul Adams is the Open Source Lead for Europe's largest e-commerce platform, Zalando. Paul works in support of a team that helps to grow a community around Zalando's open source technologies and to consult internally on how best to operate in an open manner. Paul is known as a long-time contributor to the KDE community but these days, spends most of his contribution time working on Habitat.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/kresimirKoruznjak@1x.jpg 1x, img/speakers/kresimirKoruznjak@2x.jpg 2x" src="img/speakers/kresimirKoruznjak@1x.jpg" alt="Kresimir Koruznjak")/
+              .speaker__name Kresimir Koruznjak
+              .speaker__title
+                Product Manager at
+                %br/
+                %span Algebra
+              .speaker__more-btn.btn.blue.empty.small(target="59") Read more
+              #sm59.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/kre%C5%A1imir-koru%C5%BEnjak/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                .social__bio Krešimir is a digital marketing specialist with many years of experience as an online marketing campaign manager. He is a certified Google partner for Google AdWords programme for online advertising and Google Analytics programme for tracking and reporting website traffic. He is also the owner of a digital marketing agency LosWebos focused on optimization of websites for search engines (SEO), online advertising (SEM) and creating and managing marketing campaigns on social networks.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/markoHrnjak@1x.jpg 1x, img/speakers/markoHrnjak@2x.jpg 2x" src="img/speakers/markoHrnjak@1x.jpg" alt="Marko Hrnjak")/
+              .speaker__name Marko Hrnjak
+              .speaker__title
+                Digital channel manager at
+                %br/
+                %span Algebra
+              .speaker__more-btn.btn.blue.empty.small(target="60") Read more
+              #sm60.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/mhrnjak/" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/mhrnjak" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                .social__bio Marko Hrnjak is a certified Google trainer, Google AdWords and Google Analytics specialist, and Algebra’s digital channel manager. He is one of the few certified Google trainers in Croatia and is also the head of Internet marketing communications projects - from online advertising, website production and social networking applications.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/samsoorHemat@1x.jpg 1x, img/speakers/samsoorHemat@2x.jpg 2x" src="img/speakers/samsoorHemat@1x.jpg" alt="Samsoor Hemat")/
+              .speaker__name Samsoor Hemat
+              .speaker__title
+                Managing Director at
+                %br/
+                %span venITure
+              .speaker__more-btn.btn.blue.empty.small(target="61") Read more
+              #sm61.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/samsoor-hemat-6298699b/?locale=de_DE" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                .social__bio Samsoor Hemat is Managing Director and co-founder of the venITure GmbH with its head office in Cologne, Germany. Sam has an technology management background and has always had a passion for IT. venITure has rapidly expanded and opened offices in Split and Istanbul recently with plans of further expansions. venITure is an official Atlassian Solution Partner and alongside this holds a core focus on software development and IT-consultancy.
+
+            .speaker
+              .speaker__image
+                %img(srcset="img/speakers/matevzPetek@1x.jpg 1x, img/speakers/matevzPetek@2x.jpg 2x" src="img/speakers/matevzPetek@1x.jpg" alt="Matevz Petek")/
+              .speaker__name Matevz Petek
+              .speaker__title
+                Founder at
+                %br/
+                %span Povio Labs
+              .speaker__more-btn.btn.blue.empty.small(target="62") Read more
+              #sm62.speaker__more
+                .speaker__social
+                  %a.social.linkedin(href="https://www.linkedin.com/in/matevzpetek" target="_blank")
+                    %img(src="img/icons/s-linkedin.svg" alt="LinkedIn")/
+                  %a.social.twitter(href="https://twitter.com/matevzpetek" target="_blank")
+                    %img(src="img/icons/s-twitter.svg" alt="Twitter")/
+                .social__bio Matevž Petek is a founder of Povio Labs, company that helps entrepreneurs with big ideas or established enterprises to build and launch beautifully designed, scalable software that simply works. As previously a professtional snowboarder, he managed his entire carrer by himself, including dealing with sponsors, brand managers, media and the snowboarding association.
+
+
+
+
+
+
+    / SCHEDULE SECTION **************************************
+    #schedule.section
+      .container
+        %h1 Schedule
+        .title-desc Vast number of different speeches and activities
+
+        .agenda-wrap
+
+          .agenda-nav-wrap
+            .agenda-nav
+              .agenda-nav__btn(target="an-left")
+                <
+              .agenda-nav__btn(target="an-right")
+                >
+
+          #day1.agenda.show
+            .agenda__title Day 1 - 31/05/2018 - Thursday
+            .small-nav2
+              #day1-mainLink.small-nav2__item.active
+                main track
+              #day1-areaLink.small-nav2__item
+                workshop
+
+            #day1-main.agenda-content1.show
+              .agenda__list
+                .agenda__list-item
+                  .agenda__time 10:00 - 11:00
+                  .agenda__desc
+                    %span.al-title Registration
+                    %span.al-name
+                    %span.al-company
+
+                  .agenda__list-item
+                    .agenda__time 11:00 - 11:15
+                    .agenda__desc
+                      %span.al-title Opening Ceremony -
+                      %span.al-name Ivan Burazin
+                      %span.al-company (Codeanywhere)
+
+                  .agenda__list-item
+                    .agenda__time 11:15 - 12:00
+                    .agenda__desc
+                      %span.al-title Designing for impact: Why beautiful design is not enough? - 
+                      %span.al-name Vladimir Koncar
+                      %span.al-company (Five)
+
+                  .agenda__list-item
+                    .agenda__time 12:00 - 12:45
+                    .agenda__desc
+                      %span.al-title webpack: Building a Platform -
+                      %span.al-name Sean Larkin
+                      %span.al-company (Microsoft)
+
+                  .agenda__list-item
+                    .agenda__time 12:45 - 13:45
+                    .agenda__desc
+                      %span.al-title
+                        Lunch By 
+                        %a(href="https://www.shopify.com/" target="_blank")
+                          Shopify
+                        | Building Accessible Experiences -
+                      %span.al-name Tiffany Tse
+                      %span.al-company (Shopify)
+
+                  .agenda__list-item
+                    .agenda__time 13:45 - 14:30
+                    .agenda__desc
+                      %span.al-title The Product Manager is Your Best Friend -
+                      %span.al-name Marc Abraham
+                      %span.al-company (Mind the Product)
+
+                  .agenda__list-item
+                    .agenda__time 14:30 - 15:15
+                    .agenda__desc
+                      %span.al-title Typescript - Increase your Development Velocity -
+                      %span.al-name Patrick Desjardins
+                      %span.al-company (Netflix)
+
+                  .agenda__list-item
+                    .agenda__time 15:15 - 16:00
+                    .agenda__desc
+                      %span.al-title Artificial Intelligence and Machine Learning in the browser -
+                      %span.al-name Keyfer Mathewson
+                      %span.al-company (Shopify)
+
+                  .agenda__list-item
+                    .agenda__time 16:00 - 16:30
+                    .agenda__desc
+                      %span.al-title Coffee Break
+                      %span.al-name
+                      %span.al-company
+
+                  .agenda__list-item
+                    .agenda__time 16:30 - 17:15
+                    .agenda__desc
+                      %span.al-title Don’t get lost in space: How high performing teams collaborate to ship world class software -
+                      %span.al-name Kathy Simpson
+                      %span.al-company (GitHub)
+
+                  .agenda__list-item
+                    .agenda__time 17:15 - 17:45
+                    .agenda__desc
+                      %span.al-title From Web to Desktop, the Future of Modern Web Applications That Need to Speak to Your Hardware -
+                      %span.al-name Luca Cipriani
+                      %span.al-company (Arduino)
+
+                  .agenda__list-item
+                    .agenda__time 17:45 - 18:30
+                    .agenda__desc
+                      %span.al-title Forging Ahead with Containers -
+                      %span.al-name Tarik Makota & Cyrille Fauvel
+                      %span.al-company (AWS & Autodesk)
+
+                  .agenda__list-item
+                    .agenda__time 18:30 - 19:00
+                    .agenda__desc
+                      %span.al-title So you want a remote job, uh? -
+                      %span.al-name Marco Cecconi
+                      %span.al-company (Toptal)
+
+                  .agenda__list-item
+                    .agenda__time 21:00 - 03:00
+                    .agenda__desc
+                      %span.al-title
+                        After Party powered by 
+                        %a(href="https://www.algebra.hr/" target="_blank")
+                          Algebra
+                      %span.al-name @ Fabrique pub
+                      %span.al-company 
+                        
+
+
+
+
+            #day1-area.agenda-content1
+              .agenda__list
+                .agenda__list-item
+                  .agenda__time 10:00 - 11:00
+                  .agenda__desc
+                    %span.al-title Registration
+                    %span.al-name
+                    %span.al-company
+
+                .agenda__list-item
+                  .agenda__time 11:15 - 12:00
+                  .agenda__desc
+                    %span.al-title Developer scene in Split-Dalmatia County - present and the perspective -
+                    %span.al-name Damir Brcic
+                    %span.al-company (SDŽ)
+
+                .agenda__list-item
+                  .agenda__time 12:00 - 12:45
+                  .agenda__desc
+                    %span.al-title Digital Garage
+                    %span.al-name Kresimir Koruznjak
+                    %span.al-company (Algebra)
+
+                  .agenda__list-item
+                    .agenda__time 12:45 - 13:45
+                    .agenda__desc
+                      %span.al-title
+                        Lunch By 
+                        %a(href="https://www.shopify.com/" target="_blank")
+                          Shopify 
+                      %span.al-name
+                      %span.al-company
+
+                  .agenda__list-item
+                    .agenda__time 13:45 - 16:00
+                    .agenda__desc
+                      %span.al-title CSS Grid -
+                      %span.al-name Tomislav Slovenec
+                      %span.al-company (Infinum)
+
+                  .agenda__list-item
+                    .agenda__time 16:00 - 16:30
+                    .agenda__desc
+                      %span.al-title Coffee Break
+                      %span.al-name
+                      %span.al-company
+
+                  .agenda__list-item
+                    .agenda__time 16:30 - 17:30
+                    .agenda__desc
+                      %span.al-title The power of scripts for the automation of Atlassian Jira -
+                      %span.al-name Samsoor Hemat
+                      %span.al-company (venITure)
+
+                  .agenda__list-item
+                    .agenda__time 17:30 - 19:30
+                    .agenda__desc
+                      %span.al-title Building battery powered IoT devices in server-less environment -
+                      %span.al-name Tomislav Canic
+                      %span.al-company (Aduro)
+
+                  .agenda__list-item
+                    .agenda__time 21:00 – 03:00
+                    .agenda__desc
+                      %span.al-title
+                        After Party powered by 
+                        %a(href="https://www.algebra.hr/" target="_blank")
+                          Algebra
+                      %span.al-name @ Fabrique pub
+                      %span.al-company
+                        
+
+
+
+          #day2.agenda
+            .agenda__title Day 2 - 01/06/2018 - Friday
+            .small-nav3
+              #day2-mainLink.small-nav3__item.active
+                main track
+              #day2-areaLink.small-nav3__item
+                workshop
+
+            #day2-main.agenda-content2.show
+              .agenda__list
+                .agenda__list-item
+                  .agenda__time 10:00 - 11:00
+                  .agenda__desc
+                    %span.al-title Registration
+                    %span.al-name
+                    %span.al-company
+
+                .agenda__list
+                  .agenda__list-item
+                    .agenda__time 11:00 - 11:45
+                    .agenda__desc
+                      %span.al-title PHP in 2018 -
+                      %span.al-name Rasmus Lerdorf
+                      %span.al-company (PHP)
+
+                  .agenda__list-item
+                    .agenda__time 11:45 - 12:15
+                    .agenda__desc
+                      %span.al-title Blockchains For Distributed Applications -
+                      %span.al-name John Feminella
+                      %span.al-company (Pivotal)
+
+                  .agenda__list-item
+                    .agenda__time 12:15 - 12:30
+                    .agenda__desc
+                      %span.al-title How we started with GraphQL on top of our REST API -
+                      %span.al-name Michal Sänger
+                      %span.al-company (kiwi.com)
+
+                  .agenda__list-item
+                    .agenda__time 12:30 - 12:45
+                    .agenda__desc
+                      %span.al-title Value of Data and Future of Privacy - 
+                      %span.al-name Marin Tvrdic
+                      %span.al-company (Internet of People)
+
+                  .agenda__list-item
+                    .agenda__time 12:45 - 13:45
+                    .agenda__desc
+                      %span.al-title Lunch
+                      %span.al-name
+                      %span.al-company
+
+                  .agenda__list-item
+                    .agenda__time 13:45 - 14:30
+                    .agenda__desc
+                      %span.al-title Run Less Software -
+                      %span.al-name Richard Archbold
+                      %span.al-company (Intercom)
+
+                  .agenda__list
+                    .agenda__list-item
+                      .agenda__time 14:30 - 15:15
+                      .agenda__desc
+                        %span.al-title Ditch the MVP -
+                        %span.al-name DeVaris Brown
+                        %span.al-company (Heroku)
+
+                  .agenda__list-item
+                    .agenda__time 15:15 - 16:00
+                    .agenda__desc
+                      %span.al-title CSS: Where it Came From, Where it's Going -
+                      %span.al-name Hakon Wium Lie
+                      %span.al-company (Creator of CSS)
+
+                  .agenda__list-item
+                    .agenda__time 16:00 - 16:30
+                    .agenda__desc
+                      %span.al-title Coffee Break
+                      %span.al-name
+                      %span.al-company
+
+                  .agenda__list-item
+                    .agenda__time 16:30 - 17:15
+                    .agenda__desc
+                      %span.al-title Google Home meets containers on Google Cloud -
+                      %span.al-name Mete Atamel
+                      %span.al-company (Google)
+
+                  .agenda__list-item
+                    .agenda__time 17:15 - 17:45
+                    .agenda__desc
+                      %span.al-title How To Jump Start a Career in Open Source -
+                      %span.al-name Eric Schabell
+                      %span.al-company (Red Hat)
+
+                  .agenda__list-item
+                    .agenda__time 17:45 - 18:30
+                    .agenda__desc
+                      %span.al-title Project Things - Unifying the Internet of Things -
+                      %span.al-name Kalyan Dikshit
+                      %span.al-company (Mozilla)
+
+                  .agenda__list-item
+                    .agenda__time 18:30 - 19:00
+                    .agenda__desc
+                      %span.al-title Closing Ceremony
+                      %span.al-name
+                      %span.al-company
+
+                  .agenda__list-item
+                    .agenda__time 23:00 - 05:00
+                    .agenda__desc
+                      %span.al-title After Party
+                      %span.al-name @ Central club
+                      %span.al-company
+      
+
+
+            #day2-area.agenda-content2
+              .agenda__list
+                .agenda__list-item
+                  .agenda__time 10:00 - 12:00
+                  .agenda__desc
+                    %span.al-title InnerSource: Applying Open Source Practices in the Enterprise -
+                    %span.al-name Paul Adams
+                    %span.al-company (Zalando)
+
+                .agenda__list-item
+                  .agenda__time 12:00 - 12:45
+                  .agenda__desc
+                    %span.al-title Advanced data visualization techniques in Google Data Studio -
+                    %span.al-name Marko Hrnjak
+                    %span.al-company (Algebra)
+    
+                .agenda__list-item
+                  .agenda__time 12:45 - 13:45
+                  .agenda__desc
+                    %span.al-title Lunch
+                    %span.al-name
+                    %span.al-company
+
+                .agenda__list-item
+                  .agenda__time 13:45 - 16:00
+                  .agenda__desc
+                    %span.al-title Kubernetes the AWSome Way! -
+                    %span.al-name Tarik Makota
+                    %span.al-company (AWS)
+
+                .agenda__list-item
+                  .agenda__time 16:00 - 16:30
+                  .agenda__desc
+                    %span.al-title Coffee Break
+                    %span.al-name
+                    %span.al-company
+
+                .agenda__list-item
+                  .agenda__time 16:30 - 18:30
+                  .agenda__desc
+                    %span.al-title Going Serverless on Azure -
+                    %span.al-name Ivan Culjak
+                    %span.al-company (Toptal)
+
+                .agenda__list-item
+                  .agenda__time 23:00 - 05:00
+                  .agenda__desc
+                    %span.al-title After Party
+                    %span.al-name @ Central club
+                    %span.al-company
+
+
+
+
+
+
+
+    / DOWNLOAD SECTION **************************************
+    #download.section
+      .container
+        .download__video
+          %iframe(allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/YOMcSbT82Ks?rel=0" width="100%")
+          //.download__video-btn
+        .heroBox
+          .heroBox__date
+            .heroBox__date--text 31 May & 1 June
+            .heroBox__date--line
+            .heroBox__date--text Split, Croatia
+          .heroBox__heading
+            %strong Largest Developer Conference
+            %br
+            in Southeast Europe
+          .heroBox__buttons
+            %a.btn.blue.fill(href="#tickets") Get Tickets
+
+          .download__row
+            Download our app
+            .download__buttons
+              %a(href="https://itunes.apple.com/il/app/shift-developer-conference/id1237840908?mt=8" target="_blank")
+                %img(src="img/appstore.svg" alt="AppStore")/
+              %a(href="https://play.google.com/store/apps/details?id=co.synergetica.shift" target="_blank")
+                %img(src="img/playstore.svg" alt="PlayStore")/
+
+    / TESTIMONIALS SECTION **************************************
+    #testimonials.section
+      .container
+        %h1 Testimonials
+        .title-desc What people say
+
+        .testimonials
+          .testimonials-item
+            %table
+              %tr
+                %td
+                  .testimonials__img
+                    %img(src="img/testimonials/una.jpg" alt="")/
+                %td
+                  .testimonials__name Una Kravits
+                  .testimonials__title UI Engineer at DigitalOcean
+              %tr
+                %td.v-top
+                  .testimonials__img.quote
+                %td
+                  .testimonials__text "Shift was a really exciting glance into the tech community of Split. I was really impressed with the venue, the people and conversations I had there, and feel really lucky that I had a chance to explore the city itself."
+
+          .testimonials-item
+            %table
+              %tr
+                %td
+                  .testimonials__img
+                    %img(src="img/testimonials/tom-preston.png" alt="")/
+                %td
+                  .testimonials__name TOM PRESTON-WERNER
+                  .testimonials__title Co-Founder at GitHub
+              %tr
+                %td.v-top
+                  .testimonials__img.quote
+                %td
+                  .testimonials__text The Shift Conference for me was a great way to connect with the developers where the growth, energy, and future of technology is -- outside the North American bubble. There's a vibrant, engaging perspective and energy here that's not to be missed to get a complete picture of where the world's developers are going -- and what we will all be building together."
+
+          .testimonials-item
+            %table
+              %tr
+                %td
+                  .testimonials__img
+                    %img(src="img/testimonials/ikeDelorenzo.jpg" alt="")/
+                %td
+                  .testimonials__name Ike DeLorezno
+                  .testimonials__title Senior Director of Product at Heroku
+              %tr
+                %td.v-top
+                  .testimonials__img.quote
+                %td
+                  .testimonials__text "Shift stands out as a rare gem in a world of cookie cutter tech conferences. Listening to insightful talks from the brightest minds of today’s tech scene while surrounded by the enchanting history of a town built nearly two millenia ago, you’d be hard pressed to find a more inspiring blend of past and future. Oh, and it’s the most fun you’ll have all year!"
 
     / TICKETS SECTION **************************************
     #tickets.section
@@ -123,14 +1270,7 @@
         .title-desc Buy tickets
 
         .tickets
-          %iframe(src="https://eventbrite.com/tickets-external?eid=46462014135&ref=etckt" frameborder="0" height="373" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true")
-
-
-
-
-
-
-
+          %iframe(src="https://www.eventbrite.com/tickets-external?eid=35075304179&ref=etckt" frameborder="0" height="531" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true")
 
     / PREVIOUS SECTION **************************************
     #previous.section
@@ -152,21 +1292,10 @@
               %span 2015
             #pn-item2016.pn-item
               %span 2016
-            #pn-item2017.pn-item
+            #pn-item2017.pn-item.active
               %span 2017
-            #pn-item2018.pn-item.active
-              %span 2018
 
-          #slideshow2018.slideshow.show
-            %a(href="https://www.flickr.com/photos/shiftsplit/sets/72157667681531657" target="_blenk")
-              .previous-overlay
-                .previous__btn
-                  %svg(height="55" viewbox="0 0 55 55" width="55" xmlns="http://www.w3.org/2000/svg")
-                    %g(fill="none" fill-rule="evenodd")
-                      %circle(cx="27.5" cy="27.5" fill="#005DF2" r="27.5")
-                      %path(d="M35.5 28.5l-11 8v-16z" fill="#FFF" opacity=".863")
-                  %p Click to view the gallery
-          #slideshow2017.slideshow
+          #slideshow2017.slideshow.show
             %a(href="https://www.flickr.com/photos/shiftsplit/sets/72157684842195725" target="_blenk")
               .previous-overlay
                 .previous__btn
@@ -254,7 +1383,7 @@
                   center: shiftSpot
                 });
 
-                var contentString = "<strong>Shift Developer Conference 2019</strong><br>Trg Gaje Bulata 1, Split<br>";
+                var contentString = "<strong>Shift Developer Conference 2018</strong><br>Trg Gaje Bulata 1, Split<br>";
 
                 var infowindow = new google.maps.InfoWindow({
                   content: contentString
@@ -263,7 +1392,7 @@
                 var marker = new google.maps.Marker({
                   position: shiftSpot,
                   map: map,
-                  title: 'Shift Developer Conference 2019'
+                  title: 'Shift Developer Conference 2018'
                 });
 
                 var marker2 = new google.maps.Marker({
@@ -288,7 +1417,7 @@
           .location__details
             %h2.small
               %span Shift 
-              Developer Conference 2019
+              Developer Conference 2018
             .title-desc
               Trg Gaje Bulata 1,
               %br/
@@ -322,61 +1451,6 @@
 
 
 
-    / TESTIMONIALS SECTION **************************************
-    #testimonials.section(style="margin-bottom: 50px;")
-      .container
-        %h1 Testimonials
-        .title-desc What people say
-
-        .testimonials
-          .testimonials-item
-            %table
-              %tr
-                %td
-                  .testimonials__img
-                    %img(src="img/testimonials/una.jpg" alt="")/
-                %td
-                  .testimonials__name Una Kravits
-                  .testimonials__title UI Engineer at DigitalOcean
-              %tr
-                %td.v-top
-                  .testimonials__img.quote
-                %td
-                  .testimonials__text "Shift was a really exciting glance into the tech community of Split. I was really impressed with the venue, the people and conversations I had there, and feel really lucky that I had a chance to explore the city itself."
-
-          .testimonials-item
-            %table
-              %tr
-                %td
-                  .testimonials__img
-                    %img(src="img/testimonials/tom-preston.png" alt="")/
-                %td
-                  .testimonials__name TOM PRESTON-WERNER
-                  .testimonials__title Co-Founder at GitHub
-              %tr
-                %td.v-top
-                  .testimonials__img.quote
-                %td
-                  .testimonials__text The Shift Conference for me was a great way to connect with the developers where the growth, energy, and future of technology is -- outside the North American bubble. There's a vibrant, engaging perspective and energy here that's not to be missed to get a complete picture of where the world's developers are going -- and what we will all be building together."
-
-          .testimonials-item
-            %table
-              %tr
-                %td
-                  .testimonials__img
-                    %img(src="img/testimonials/ikeDelorenzo.jpg" alt="")/
-                %td
-                  .testimonials__name Ike DeLorezno
-                  .testimonials__title Senior Director of Product at Heroku
-              %tr
-                %td.v-top
-                  .testimonials__img.quote
-                %td
-                  .testimonials__text "Shift stands out as a rare gem in a world of cookie cutter tech conferences. Listening to insightful talks from the brightest minds of today’s tech scene while surrounded by the enchanting history of a town built nearly two millenia ago, you’d be hard pressed to find a more inspiring blend of past and future. Oh, and it’s the most fun you’ll have all year!"
-
-
-
-
 
     / SUBMISSION SECTION **************************************
     #submission.section.hide
@@ -385,6 +1459,320 @@
           %h2 See who's coming
           %p As the biggest developer conference in Southeast Europe, Shift offers an unparalleled opportunity to meet developers from around the globe. See who's attending this year's conference
           %a#attendees__link.btn.blue.fill Attendee list
+
+    / SPONSORS SECTION **************************************
+    #sponsors.section
+      .container
+        %h1 Sponsors
+        .title-desc Companies that support us
+      .sponsors-wrap
+        .container
+          .sponsors-row
+            .sponsors
+              %h3 General Sponsor
+              .sponsors__group(style="margin: 0 40px 20px 0;")
+                .sponsors__item
+                  %a(href="https://www.bellabeat.com/home" target="_blank")
+                    %img(src="img/sponsors/bellabeat.svg" alt="Bellabeat" style="width: 120px; margin-top: 20px;")/
+
+            .sponsors
+              %h3 General Partner
+              .sponsors__group(style="margin: 0 40px 20px 0;")
+                .sponsors__item
+                  %a(href="https://www.ictzupanija.hr/" target="_blank")
+                    %img(src="img/sponsors/ictZupanija.png" alt="ICT Županija" style="width: 120px;")/
+
+
+          .sponsors-row.sponsorsSlider
+            %button.sponsorsSlider__btn.btn-left
+            %button.sponsorsSlider__btn.btn-right
+            #sponsorsSlider.sponsorsSlider
+              .sponsors
+                %h3 Sponsors
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="http://www.split.hr/" target="_blank")
+                      %img(src="img/sponsors/gradSplit.jpg" alt="Grad Split" style="width: 40px;")/
+                  .sponsors__item
+                    %a(href="http://five.agency/" target="_blank")
+                      %img(src="img/sponsors/five.svg" alt="Five" style="width: 50px;")/
+                  .sponsors__item
+                    %a(href="https://www.ericsson.hr/" target="_blank")
+                      %img(src="img/sponsors/ericsson.png" alt="Ericsson" style="width: 80px;")/
+                  .sponsors__item
+                    %a(href="https://iop.global/" target="_blank")
+                      %img(src="img/sponsors/iop.png" alt="Internet of People")/
+                  .sponsors__item
+                    %a(href="https://www.kiwi.com/en/" target="_blank")
+                      %img(src="img/sponsors/kiwi.png" alt="kiwi.com")/
+                  .sponsors__item
+                    %a(href="https://www.splitskabanka.hr/" target="_blank")
+                      %img(src="img/sponsors/splitskabanka.svg" alt="Splitska banka")/
+                  .sponsors__item
+                    %a(href="http://hamagbicro.hr/" target="_blank")
+                      %img(src="img/sponsors/hamag.svg" alt="Hamag Bicro")/
+
+              .sponsors
+                %h3 Partners
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.hrcloud.com/" target="_blank")
+                      %img(src="img/sponsors/hrcloud.svg" alt="HR Cloud")/
+                  .sponsors__item
+                    %a(href="https://www.autodesk.com/" target="_blank")
+                      %img(src="img/sponsors/autodesk.svg" alt="Autodesk")/
+                  .sponsors__item
+                    %a(href="http://www.visitsplit.com/" target="_blank")
+                      %img(src="img/sponsors/tzs.svg" alt="Turisticka zajednica" style="width: 60px;")/
+                  .sponsors__item
+                    %a(href="https://www.toptal.com/" target="_blank")
+                      %img(src="img/sponsors/toptal.png" alt="Toptal")/
+                  .sponsors__item
+                    %a(href="https://www.shopify.com/" target="_blank")
+                      %img(src="img/sponsors/shopify.svg" alt="Shopify")/
+                  
+              .sponsors
+                %h3.hidden Partners
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://aws.amazon.com/" target="_blank")
+                      %img(src="img/sponsors/aws.svg" alt="AWS" style="margin-top: 10px;")/
+                  .sponsors__item
+                    %a(href="https://www.heroku.com/" target="_blank")
+                      %img(src="img/sponsors/heroku.svg" alt="Heroku")/
+                  .sponsors__item
+                    %a(href="https://www.algebra.hr/" target="_blank")
+                      %img(src="img/sponsors/algebra.png" alt="Algebra")/
+                  .sponsors__item
+                    %a(href="https://moduscreate.com/" target="_blank")
+                      %img(src="img/sponsors/modus.png" alt="Modus" style="width: 70px;")/
+                  .sponsors__item
+                    %a(href="https://www.dalmatia.hr/hr" target="_blank")
+                      %img(src="img/sponsors/tzsdz.png" alt="Turisticka zajednica Splitsko-Dalmatinske županije")/
+
+              .sponsors
+                %h3 Friends
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="http://www.pbzco-fond.hr/" target="_blank")
+                      %img(src="img/sponsors/pbz.png" alt="PBZ CO")/
+                  .sponsors__item
+                    %a(href="https://getbybus.com/en/" target="_blank")
+                      %img(src="img/location/byBus.svg" alt="GetByBus")/
+                  .sponsors__item
+                    %a(href="http://agilo.co/" target="_blank")
+                      %img(src="img/sponsors/agilo.png" alt="Agilo")/
+                  .sponsors__item
+                    %a(href="http://www.svgroup.hr/" target="_blank")
+                      %img(src="img/sponsors/svGroup.png" alt="SV Group - IBM")/
+                  .sponsors__item
+                    %a(href="https://www.hgk.hr/" target="_blank")
+                      %img(src="img/sponsors/hgk.svg" alt="Hrvatska Gospodarska Komora" style="width: 50px;")/
+                  .sponsors__item
+                    %a(href="https://extensionengine.com/" target="_blank")
+                      %img(src="img/sponsors/extensionengine.svg" alt="Extension Engine")/
+                  .sponsors__item
+                    %a(href="https://www.bundesdruckerei.de/en/About-us/Group" target="_blank")
+                      %img(src="img/sponsors/bdr.svg" alt="Bundesdruckerei" style="width: 50px;")/
+
+              .sponsors
+                %h3.hidden Friends
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.nsoft.com/" target="_blank")
+                      %img(src="img/sponsors/nsoft.svg" alt="Nsoft")/
+                  .sponsors__item
+                    %a(href="https://www.travelsoft.hr/" target="_blank")
+                      %img(src="img/sponsors/travelsoft.svg" alt="Travelsoft")/
+                  .sponsors__item
+                    %a(href="http://www.aduro.hr/" target="_blank")
+                      %img(src="img/sponsors/aduro.png" alt="Aduro Idea")/
+                  .sponsors__item
+                    %a(href="https://github.com/" target="_blank")
+                      %img(src="img/sponsors/github.svg" alt="Github" style="width: 60px;")/
+                  .sponsors__item
+                    %a(href="https://www.mozilla.org" target="_blank")
+                      %img(src="img/sponsors/mozilla.svg" alt="Mozilla" style="width: 60px;")/
+                  .sponsors__item
+                    %a(href="http://www.centralclub.hr/" target="_blank")
+                      %img(src="img/sponsors/centralklub.png" alt="Central Klub")/
+
+
+
+
+
+          .sponsors-row.sponsorsSlider
+            %button.sponsorsSlider__btn.btn-left2
+            %button.sponsorsSlider__btn.btn-right2
+            #sponsorsSlider2.sponsorsSlider
+              .sponsors
+                %h3 Official Water
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="http://www.jana-water.com/hr" target="_blank")
+                      %img(src="img/sponsors/jana.svg" alt="Jana" style="width: 50px; margin-top: 10px;")/
+              .sponsors
+                %h3 Food & Beverage
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.dolce-gusto.hr/" target="_blank")
+                      %img(src="img/sponsors/dolceGusto.svg" alt="Dolce Gusto" style="width: 50px;")/
+                  .sponsors__item
+                    %a(href="https://www.dobartek.hr/" target="_blank")
+                      %img(src="img/sponsors/dobartek.png" alt="Dobar tek")/
+                  .sponsors__item
+                    %a(href="http://www.coca-cola.hr/hr/home/" target="_blank")
+                      %img(src="img/sponsors/cola.png" alt="Coca Cola")/
+                  .sponsors__item
+                    %a(href="https://www.thebotanist.com/the-botanist-islay-dry-gin" target="_blank")
+                      %img(src="img/sponsors/botanist.svg" alt="The Botanist")/
+                  .sponsors__item
+                    %a(href="https://carlsbergcroatia.hr/products/panonska/panonska-wheat/" target="_blank")
+                      %img(src="img/sponsors/panonska.png" alt="Panonska")/
+                  .sponsors__item
+                    %a(href="http://www.somersby.hr/hr/" target="_blank")
+                      %img(src="img/sponsors/somersby.png" alt="Somersby")/
+                  .sponsors__item
+                    %a(href="http://pipi.com.hr/" target="_blank")
+                      %img(src="img/sponsors/pipi.png" alt="Pipi")/
+                  .sponsors__item
+                    %a(href="http://www.dalmacijavino.hr/" target="_blank")
+                      %img(src="img/sponsors/dalmacijavino.png" alt="Dalmacija vino")/
+                  .sponsors__item
+                    %a(href="https://www.jamnica.hr/" target="_blank")
+                      %img(src="img/sponsors/jamnica.svg" alt="Jamnica" style="width: 80px;")/
+
+              .sponsors
+                %h3 Technology Partner
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.hrvatskitelekom.hr/" target="_blank")
+                      %img(src="img/sponsors/tcom.png" alt="T-Com")/
+
+              .sponsors
+                %h3 Logistical
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.novarentacar.hr/" target="_blank")
+                      %img(src="img/sponsors/novarentacar.png" alt="Nova Rentacar")/
+                  .sponsors__item
+                    %a(href="http://synergetica.co/" target="_blank")
+                      %img(src="img/sponsors/synergetica.png" alt="Synergetica")/
+                  .sponsors__item
+                    %a(href="https://www.saltwatersplit.com/" target="_blank")
+                      %img(src="img/sponsors/saltwater.svg" alt="Saltwater")/
+
+              .sponsors
+                %h3 General Media
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.rtl.hr/" target="_blank")
+                      %img(src="img/sponsors/rtl.svg" alt="RTL televizija" style="width:60px; margin-top: 15px;")/
+
+              .sponsors
+                %h3 Media
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="http://digitalshapers.rtl.hr/" target="_blank")
+                      %img(src="img/sponsors/digitalshapers.svg" alt="Digital Shapers" style="width:60px;")/
+                  .sponsors__item
+                    %a(href="https://www.dalmacijadanas.hr/" target="_blank")
+                      %img(src="img/sponsors/dalmacijadanas.png" alt="Dalmacija Danas")/
+                  .sponsors__item
+                    %a(href="http://www.netokracija.com/" target="_blank")
+                      %img(src="img/sponsors/netokracija.png" alt="Netokracija")/
+                  .sponsors__item
+                    %a(href="http://split.com.hr/" target="_blank")
+                      %img(src="img/sponsors/splitskiportal.png" alt="Splitski portal")/
+                  .sponsors__item
+                    %a(href="https://poslovnipuls.com/" target="_blank")
+                      %img(src="img/sponsors/poslovniplus.png" alt="Poslovni Puls")/
+                  .sponsors__item
+                    %a(href="https://www.sat-multimedia.com/" target="_blank")
+                      %img(src="img/sponsors/satmultimedija.png" alt="Sat-Multimedija & IT")/
+                  .sponsors__item
+                    %a(href="http://www.dalmacijanews.hr/" target="_blank")
+                      %img(src="img/sponsors/dalmacijaNews.png" alt="Dalmacija News" style="width:80px;")/
+
+              .sponsors
+                %h3 Organizational Partners
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://codeanywhere.com/" target="_blank")
+                      %img(src="img/sponsors/codeanywhere.png" alt="Codeanywhere")/
+                  .sponsors__item
+                    %a(href="https://www.locastic.com/" target="_blank")
+                      %img(src="img/sponsors/locastic.png" alt="Locastic")/
+                  .sponsors__item
+                    %a(href="https://www.profi.co/" target="_blank")
+                      %img(src="img/sponsors/profico.png" alt="Profico")/
+
+              .sponsors
+                %h3 Expo
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.nttdata.com/global/en/" target="_blank")
+                      %img(src="img/sponsors/nttdata.png" alt="NTT")/
+                  .sponsors__item
+                    %a(href="https://atos.net/en/" target="_blank")
+                      %img(src="img/sponsors/atos.jpg" alt="Atos")/
+                  .sponsors__item
+                    %a(href="https://www.veniture.net" target="_blank")
+                      %img(src="img/sponsors/veniture.png" alt="VenITure")/
+                  .sponsors__item
+                    %a(href="http://www.aspira.hr/" target="_blank")
+                      %img(src="img/sponsors/aspira.svg" alt="Aspira")/
+                  .sponsors__item
+                    %a(href="https://en.split-techcity.com/" target="_blank")
+                      %img(src="img/sponsors/splitTechCity.svg" alt="Split Tech City")/
+
+              .sponsors
+                %h3 Supporters
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="http://www.cisex.org/" target="_blank")
+                      %img(src="img/sponsors/cise.svg" alt="Cisex")/
+                  .sponsors__item
+                    %a(href="https://www.dalmacija.hr/" target="_blank")
+                      %img(src="img/sponsors/sdz.svg" alt="Dalmacija")/
+                  .sponsors__item
+                    %a(href="http://gradst.unist.hr/" target="_blank")
+                      %img(src="img/sponsors/gradevinski.svg" alt="")/
+                  .sponsors__item
+                    %a(href="http://www.efst.unist.hr/" target="_blank")
+                      %img(src="img/sponsors/efst.svg" alt="Ekonomski fakultet" style="width:60px;")/
+                  .sponsors__item
+                    %a(href="http://pseudocode.agency/" target="_blank")
+                      %img(src="img/sponsors/pseudocode.svg" alt="Pseudocode")/
+                  .sponsors__item
+                    %a(href="https://www.raza.hr/" target="_blank")
+                      %img(src="img/sponsors/raztpz.png" alt="Razvojna Agencija Zagreb")/
+                  .sponsors__item
+                    %a(href="https://www.oss.unist.hr/" target="_blank")
+                      %img(src="img/sponsors/soss.svg" alt="Sveučilište u Splitu" style="width:40px;")/
+
+              .sponsors
+                %h3.hidden Supporters
+                .sponsors__group
+                  .sponsors__item
+                    %a(href="https://www.intercom.com/" target="_blank")
+                      %img(src="img/sponsors/intercom.svg" alt="Intercom")/
+                  .sponsors__item
+                    %a(href="https://www.facebook.com/hrprodigydoo/" target="_blank")
+                      %img(src="img/sponsors/hrprodigy.png" alt="HR Prodigy")/
+                  .sponsors__item
+                    %a(href="https://infinum.co/" target="_blank")
+                      %img(src="img/sponsors/infinum.png" alt="Infinum")/
+                  .sponsors__item
+                    %a(href="https://radix.website/dot-tech" target="_blank")
+                      %img(src="img/sponsors/techdomains.png" alt="Tech Domains")/
+                  .sponsors__item
+                    %a(href="https://www.neos.hr/" target="_blank")
+                      %img(src="img/sponsors/neos.svg" alt="Neos")/
+                  .sponsors__item
+                    %a(href="https://seekandhit.com/" target="_blank")
+                      %img(src="img/sponsors/seekandhit.png" alt="SeekandHit")/
+
 
 
 
@@ -397,7 +1785,7 @@
           .footer__copyright
             All Rights Reserved by 
             %a(href="https://shiftconf.co/") Shift 
-            © 2019
+            © 2018
             %br/
             %span#codeOfConduct__link
               Code of Conduct
@@ -405,7 +1793,7 @@
               Founder’s Note
         .footer__col
           %h3 About
-          %p The biggest Developer Conference in Southeast Europe. This event, Shift 2019 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
+          %p The biggest Developer Conference in Southeast Europe. This event, Shift 2018 is the seventh and will bring together more than 1300 attendees. During the two conference days, Shift becomes a meeting place for developers in the most beautiful city in the world.
           .footer-social
             %a(href="https://twitter.com/shiftsplit")
               %img(src="img/icons/s-twitter.svg" alt="Shift Twitter")/
@@ -422,6 +1810,7 @@
             %a(href="https://shiftconf.co/2016") Shift 2016
             %a(href="https://shiftconf.co/2017") Shift 2017
             %a(href="https://shiftconf.co/2018") Shift 2018
+
 
         .footer__col
           %h3 Contact
@@ -475,7 +1864,11 @@
 
 
 
-    
+    / CODE OF CONDUCT MODAL SECTION **************************************
+    #attendees.section
+      #attendees__close
+      %h1 See who's coming
+      #attendee__list
 
 
 
@@ -488,7 +1881,48 @@
   %script(src="js/script.min.js" type="text/javascript")
   %script(src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript")
   %script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript")
+  %script(src="slick/slick.min.js" type="text/javascript")
 
+  / Sponsor slider code
+  :javascript
+    $(document).ready(function(){
+      $('#sponsorsSlider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        variableWidth: true,
+        prevArrow: $('.btn-left'),
+        nextArrow: $('.btn-right'),
+        speed: 4000,
+        responsive: [
+          {
+            breakpoint: 850,
+            settings: "unslick"
+          }
+        ]
+      });
+    });
+
+    $(document).ready(function(){
+      $('#sponsorsSlider2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        variableWidth: true,
+        prevArrow: $('.btn-left2'),
+        nextArrow: $('.btn-right2'),
+        speed: 4000,
+        responsive: [
+          {
+            breakpoint: 850,
+            settings: "unslick"
+          }
+        ]
+      });
+    });
+  / End Sponsor slider code
 
   / Twitter universal website tag code
   :javascript

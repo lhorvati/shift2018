@@ -90,11 +90,13 @@ $(function() {
         
         $(".slideshow").removeClass("show");
         console.log(this.id);
-        if (this.id === "pn-item2017") {
+        if (this.id === "pn-item2018") {
+            $("#slideshow2018").addClass("show");
+        } else if (this.id === "pn-item2017") {
             $("#slideshow2017").addClass("show");
         } else if (this.id === "pn-item2016") {
             $("#slideshow2016").addClass("show");
-        } else if (this.id === "pn-item2015") {
+        }else if (this.id === "pn-item2015") {
             $("#slideshow2015").addClass("show");
         } else if (this.id === "pn-item2014") {
             $("#slideshow2014").addClass("show");
